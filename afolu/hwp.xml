@@ -1,0 +1,3551 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<IPCC2006Export xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ipcc2006.air.sk/IPCC2006Export">
+  <Version xmlns="">2.69</Version>
+  <inventoryYear xmlns="">2010</inventoryYear>
+  <countryCode xmlns="">BRM</countryCode>
+  <tiers xmlns="" />
+  <record xmlns="">
+    <customRegions>
+      <customRegion>
+        <id>1</id>
+        <regionName>Temperate</regionName>
+        <temperature>25</temperature>
+        <remark>Northen Sagain, Kachin and North Shan, East Shan</remark>
+      </customRegion>
+      <customRegion>
+        <id>2</id>
+        <regionName>Tropical</regionName>
+        <temperature>28</temperature>
+        <remark>Other part of the country</remark>
+      </customRegion>
+    </customRegions>
+  </record>
+  <record xmlns="">
+    <livestockCategories>
+      <livestockCategory>
+        <isDefault>true</isDefault>
+        <livestockCategoryId>1</livestockCategoryId>
+        <livestockCategoryName>Dairy Cows</livestockCategoryName>
+        <livestockSubcategories>
+          <livestockSubcategory>
+            <livestockSubcategoryId>13</livestockSubcategoryId>
+            <livestockSubcategoryName>Mature Dairy Cow</livestockSubcategoryName>
+            <livestockSubdivisions />
+          </livestockSubcategory>
+        </livestockSubcategories>
+      </livestockCategory>
+      <livestockCategory>
+        <isDefault>true</isDefault>
+        <livestockCategoryId>2</livestockCategoryId>
+        <livestockCategoryName>Other Cattle</livestockCategoryName>
+        <livestockSubcategories>
+          <livestockSubcategory>
+            <livestockSubcategoryId>2</livestockSubcategoryId>
+            <livestockSubcategoryName>Other Cattle</livestockSubcategoryName>
+            <livestockSubdivisions />
+          </livestockSubcategory>
+        </livestockSubcategories>
+      </livestockCategory>
+      <livestockCategory>
+        <isDefault>true</isDefault>
+        <livestockCategoryId>3</livestockCategoryId>
+        <livestockCategoryName>Buffalo</livestockCategoryName>
+        <livestockSubcategories>
+          <livestockSubcategory>
+            <livestockSubcategoryId>3</livestockSubcategoryId>
+            <livestockSubcategoryName>Buffalo</livestockSubcategoryName>
+            <livestockSubdivisions />
+          </livestockSubcategory>
+        </livestockSubcategories>
+      </livestockCategory>
+      <livestockCategory>
+        <isDefault>true</isDefault>
+        <livestockCategoryId>4</livestockCategoryId>
+        <livestockCategoryName>Sheep</livestockCategoryName>
+        <livestockSubcategories>
+          <livestockSubcategory>
+            <livestockSubcategoryId>4</livestockSubcategoryId>
+            <livestockSubcategoryName>Sheeps</livestockSubcategoryName>
+            <livestockSubdivisions />
+          </livestockSubcategory>
+        </livestockSubcategories>
+      </livestockCategory>
+      <livestockCategory>
+        <isDefault>true</isDefault>
+        <livestockCategoryId>5</livestockCategoryId>
+        <livestockCategoryName>Goats</livestockCategoryName>
+        <livestockSubcategories>
+          <livestockSubcategory>
+            <livestockSubcategoryId>5</livestockSubcategoryId>
+            <livestockSubcategoryName>Goats</livestockSubcategoryName>
+            <livestockSubdivisions />
+          </livestockSubcategory>
+        </livestockSubcategories>
+      </livestockCategory>
+      <livestockCategory>
+        <isDefault>true</isDefault>
+        <livestockCategoryId>6</livestockCategoryId>
+        <livestockCategoryName>Camels</livestockCategoryName>
+        <livestockSubcategories />
+      </livestockCategory>
+      <livestockCategory>
+        <isDefault>true</isDefault>
+        <livestockCategoryId>7</livestockCategoryId>
+        <livestockCategoryName>Horses</livestockCategoryName>
+        <livestockSubcategories>
+          <livestockSubcategory>
+            <livestockSubcategoryId>6</livestockSubcategoryId>
+            <livestockSubcategoryName>Horse</livestockSubcategoryName>
+            <livestockSubdivisions />
+          </livestockSubcategory>
+        </livestockSubcategories>
+      </livestockCategory>
+      <livestockCategory>
+        <isDefault>true</isDefault>
+        <livestockCategoryId>8</livestockCategoryId>
+        <livestockCategoryName>Mules and Asses</livestockCategoryName>
+        <livestockSubcategories>
+          <livestockSubcategory>
+            <livestockSubcategoryId>7</livestockSubcategoryId>
+            <livestockSubcategoryName>Mules</livestockSubcategoryName>
+            <livestockSubdivisions />
+          </livestockSubcategory>
+        </livestockSubcategories>
+      </livestockCategory>
+      <livestockCategory>
+        <isDefault>true</isDefault>
+        <livestockCategoryId>9</livestockCategoryId>
+        <livestockCategoryName>Swine</livestockCategoryName>
+        <livestockSubcategories>
+          <livestockSubcategory>
+            <livestockSubcategoryId>11</livestockSubcategoryId>
+            <livestockSubcategoryName>Pig Market</livestockSubcategoryName>
+            <livestockSubdivisions />
+          </livestockSubcategory>
+          <livestockSubcategory>
+            <livestockSubcategoryId>12</livestockSubcategoryId>
+            <livestockSubcategoryName>Pig Breeding</livestockSubcategoryName>
+            <livestockSubdivisions />
+          </livestockSubcategory>
+        </livestockSubcategories>
+      </livestockCategory>
+      <livestockCategory>
+        <isDefault>true</isDefault>
+        <livestockCategoryId>10</livestockCategoryId>
+        <livestockCategoryName>Poultry</livestockCategoryName>
+        <livestockSubcategories>
+          <livestockSubcategory>
+            <livestockSubcategoryId>9</livestockSubcategoryId>
+            <livestockSubcategoryName>Chicken</livestockSubcategoryName>
+            <livestockSubdivisions>
+              <livestockSubdivision>
+                <livestockSubdivisionId>1</livestockSubdivisionId>
+                <livestockSubdivisionName>Broiler</livestockSubdivisionName>
+              </livestockSubdivision>
+              <livestockSubdivision>
+                <livestockSubdivisionId>2</livestockSubdivisionId>
+                <livestockSubdivisionName>Layers</livestockSubdivisionName>
+              </livestockSubdivision>
+            </livestockSubdivisions>
+          </livestockSubcategory>
+          <livestockSubcategory>
+            <livestockSubcategoryId>10</livestockSubcategoryId>
+            <livestockSubcategoryName>Ducks</livestockSubcategoryName>
+            <livestockSubdivisions />
+          </livestockSubcategory>
+          <livestockSubcategory>
+            <livestockSubcategoryId>14</livestockSubcategoryId>
+            <livestockSubcategoryName>Turkeys</livestockSubcategoryName>
+            <livestockSubdivisions />
+          </livestockSubcategory>
+        </livestockSubcategories>
+      </livestockCategory>
+      <livestockCategory>
+        <isDefault>true</isDefault>
+        <livestockCategoryId>11</livestockCategoryId>
+        <livestockCategoryName>Other</livestockCategoryName>
+        <livestockSubcategories />
+      </livestockCategory>
+    </livestockCategories>
+  </record>
+  <record xmlns="">
+    <customManureManagementSystems>
+      <customMMS>
+        <id>1</id>
+        <defaultId>1</defaultId>
+        <system>Pasture/Range/Paddock</system>
+        <definition>The manure from pasture and range grazing animals is allowed to lie as deposited, and is not managed.</definition>
+        <selected>true</selected>
+      </customMMS>
+      <customMMS>
+        <id>2</id>
+        <defaultId>2</defaultId>
+        <system>Daily spread</system>
+        <definition>Manure is routinely removed from a confinement facility and is applied to cropland or pasture within 24 hours of excretion.</definition>
+        <selected>true</selected>
+      </customMMS>
+      <customMMS>
+        <id>3</id>
+        <defaultId>3</defaultId>
+        <system>Solid storage</system>
+        <definition>The storage of manure, typically for a period of several months, in unconfined piles or stacks. Manure is able to be stacked due to the presence of a sufficient amount of bedding material or loss of moisture by evaporation.</definition>
+        <selected>true</selected>
+      </customMMS>
+      <customMMS>
+        <id>4</id>
+        <defaultId>4</defaultId>
+        <system>Dry lot</system>
+        <definition>A paved or unpaved open confinement area without any significant vegetative cover where accumulating manure may be removed periodically.</definition>
+        <selected>true</selected>
+      </customMMS>
+      <customMMS>
+        <id>5</id>
+        <defaultId>5</defaultId>
+        <system>Liquid/Slurry</system>
+        <definition>Manure is stored as excreted or with some minimal addition of water in either tanks or earthen ponds outside the animal housing, usually for periods less than one year.</definition>
+        <selected>true</selected>
+      </customMMS>
+      <customMMS>
+        <id>6</id>
+        <defaultId>6</defaultId>
+        <system>Uncovered anaerobic lagoon</system>
+        <definition>A type of liquid storage system designed and operated to combine waste stabilization and storage. Lagoon supernatant is usually used to remove manure from the associated confinement facilities to the lagoon. Anaerobic lagoons are designed with varying lengths of storage (up to a year or greater), depending on the climate region, the volatile solids loading rate, and other operational factors. The water from the lagoon may be recycled as flush water or used to irrigate and fertilise fields.</definition>
+        <selected>true</selected>
+      </customMMS>
+      <customMMS>
+        <id>7</id>
+        <defaultId>7</defaultId>
+        <system>Pit storage below animal confinements</system>
+        <definition>Collection and storage of manure usually with little or no added water typically below a slatted floor in an enclosed animal confinement facility, usually for periods less than one year.</definition>
+        <selected>false</selected>
+      </customMMS>
+      <customMMS>
+        <id>8</id>
+        <defaultId>8</defaultId>
+        <system>Anaerobic digester</system>
+        <definition>Animal excreta with or without straw are collected and anaerobically digested in a large containment vessel or covered lagoon. Digesters are designed and operated for waste stabilization by the microbial reduction of complex organic  compounds to CO2 and CH4, which is captured and flared or used as a fuel.</definition>
+        <selected>true</selected>
+      </customMMS>
+      <customMMS>
+        <id>9</id>
+        <defaultId>9</defaultId>
+        <system>Burned for fuel</system>
+        <definition>The dung and urine are excreted on fields. The sun dried dung cakes are burned for fuel.</definition>
+        <selected>true</selected>
+      </customMMS>
+      <customMMS>
+        <id>10</id>
+        <defaultId>10</defaultId>
+        <system>Cattle and Swine deep bedding</system>
+        <definition>As manure accumulates, bedding is continually added to absorb moisture over a production cycle and possibly for as long as 6 to 12 months. This manure management system also is known as a bedded pack manure management system and may be combined with a dry lot or pasture.</definition>
+        <selected>false</selected>
+      </customMMS>
+      <customMMS>
+        <id>11</id>
+        <defaultId>11</defaultId>
+        <system>Composting - invessel</system>
+        <definition>Composting, typically in an enclosed channel, with forced aeration and continuous mixing.</definition>
+        <selected>false</selected>
+      </customMMS>
+      <customMMS>
+        <id>12</id>
+        <defaultId>12</defaultId>
+        <system>Composting - Static pile</system>
+        <definition>Composting in piles with forced aeration but no mixing.</definition>
+        <selected>false</selected>
+      </customMMS>
+      <customMMS>
+        <id>13</id>
+        <defaultId>13</defaultId>
+        <system>Composting - Intensive windrow</system>
+        <definition>Composting in windrows with regular (at least daily) turning for mixing and aeration.</definition>
+        <selected>false</selected>
+      </customMMS>
+      <customMMS>
+        <id>14</id>
+        <defaultId>14</defaultId>
+        <system>Composting - Passive windrow</system>
+        <definition>Composting in windrows with infrequent turning for mixing and aeration.</definition>
+        <selected>false</selected>
+      </customMMS>
+      <customMMS>
+        <id>15</id>
+        <defaultId>15</defaultId>
+        <system>Poultry manure with litter</system>
+        <definition>Similar to cattle and swine deep bedding except usually not combined with a dry lot or pasture. Typically used for all poultry breeder flocks and for the production of meat type chickens (broilers) and other fowl.</definition>
+        <selected>true</selected>
+      </customMMS>
+      <customMMS>
+        <id>16</id>
+        <defaultId>16</defaultId>
+        <system>Poultry manure without litter</system>
+        <definition>May be similar to open pits in enclosed animal confinement facilities or may be designed and operated to dry the manure as it accumulates. The latter is known as a high-rise manure management system and is a form of passive windrow composting when designed and operated properly.</definition>
+        <selected>true</selected>
+      </customMMS>
+      <customMMS>
+        <id>17</id>
+        <defaultId>17</defaultId>
+        <system>Aerobic treatment</system>
+        <definition>The biological oxidation of manure collected as a liquid with either forced or natural aeration. Natural aeration is limited to aerobic and facultative ponds and wetland systems and is due primarily to photosynthesis. Hence, these systems typically become anoxic during periods without sunlight.</definition>
+        <selected>false</selected>
+      </customMMS>
+      <customMMS>
+        <id>18</id>
+        <defaultId xsi:nil="true" />
+        <system>Other</system>
+        <definition>NULL</definition>
+        <selected>true</selected>
+      </customMMS>
+    </customManureManagementSystems>
+  </record>
+  <record xmlns="">
+    <landTypes>
+      <countryCode>BRM</countryCode>
+      <forestLand>
+        <cltForestLand>
+          <id>1</id>
+          <countryCode>BRM</countryCode>
+          <customName>Unmanaged</customName>
+          <managed>false</managed>
+          <climateRegionId>-1</climateRegionId>
+          <soilTypeId>-1</soilTypeId>
+          <ecoZoneId>-1</ecoZoneId>
+          <plantation>false</plantation>
+          <forestTypeId>-1</forestTypeId>
+          <plantationTypeId>-1</plantationTypeId>
+          <continentTypeId>-1</continentTypeId>
+          <ageClassId>-1</ageClassId>
+          <growingStockLevelId>-1</growingStockLevelId>
+          <carbonFraction>0.5</carbonFraction>
+          <ratio>0</ratio>
+          <bcef>0</bcef>
+          <emissionFactor>0</emissionFactor>
+          <aboveGroundBiomass>0</aboveGroundBiomass>
+          <aboveGroundBiomassGrowth>0</aboveGroundBiomassGrowth>
+          <mfLandUse>1</mfLandUse>
+          <mfTillage>1</mfTillage>
+          <mfInput>1</mfInput>
+          <litter>0</litter>
+          <abandoned>false</abandoned>
+        </cltForestLand>
+        <cltForestLand>
+          <id>2</id>
+          <countryCode>BRM</countryCode>
+          <customName>Tropical Evergreen Forest</customName>
+          <managed>true</managed>
+          <climateRegionId>1</climateRegionId>
+          <soilTypeId>2</soilTypeId>
+          <ecoZoneId>1</ecoZoneId>
+          <plantation>false</plantation>
+          <forestTypeId>7</forestTypeId>
+          <plantationTypeId>-1</plantationTypeId>
+          <continentTypeId>1</continentTypeId>
+          <ageClassId>2</ageClassId>
+          <growingStockLevelId>27</growingStockLevelId>
+          <carbonFraction>0.47</carbonFraction>
+          <ratio>0</ratio>
+          <bcef>1.67</bcef>
+          <emissionFactor>0</emissionFactor>
+          <aboveGroundBiomass>280</aboveGroundBiomass>
+          <aboveGroundBiomassGrowth>2.2</aboveGroundBiomassGrowth>
+          <mfLandUse>1</mfLandUse>
+          <mfTillage>1</mfTillage>
+          <mfInput>1</mfInput>
+          <litter>2.1</litter>
+          <abandoned>false</abandoned>
+        </cltForestLand>
+        <cltForestLand>
+          <id>3</id>
+          <countryCode>BRM</countryCode>
+          <customName>Mixed Deciduous Forest</customName>
+          <managed>true</managed>
+          <climateRegionId>2</climateRegionId>
+          <soilTypeId>2</soilTypeId>
+          <ecoZoneId>2</ecoZoneId>
+          <plantation>false</plantation>
+          <forestTypeId>7</forestTypeId>
+          <plantationTypeId>-1</plantationTypeId>
+          <continentTypeId>1</continentTypeId>
+          <ageClassId>3</ageClassId>
+          <growingStockLevelId>27</growingStockLevelId>
+          <carbonFraction>0.47</carbonFraction>
+          <ratio>0</ratio>
+          <bcef>1.67</bcef>
+          <emissionFactor>0</emissionFactor>
+          <aboveGroundBiomass>72.783</aboveGroundBiomass>
+          <aboveGroundBiomassGrowth>2</aboveGroundBiomassGrowth>
+          <mfLandUse>1</mfLandUse>
+          <mfTillage>1</mfTillage>
+          <mfInput>1</mfInput>
+          <litter>2.1</litter>
+          <abandoned>false</abandoned>
+        </cltForestLand>
+        <cltForestLand>
+          <id>4</id>
+          <countryCode>BRM</countryCode>
+          <customName>Dry Forest</customName>
+          <managed>true</managed>
+          <climateRegionId>4</climateRegionId>
+          <soilTypeId>2</soilTypeId>
+          <ecoZoneId>4</ecoZoneId>
+          <plantation>false</plantation>
+          <forestTypeId>7</forestTypeId>
+          <plantationTypeId>-1</plantationTypeId>
+          <continentTypeId>1</continentTypeId>
+          <ageClassId>2</ageClassId>
+          <growingStockLevelId>32</growingStockLevelId>
+          <carbonFraction>0.47</carbonFraction>
+          <ratio>0</ratio>
+          <bcef>2.11</bcef>
+          <emissionFactor>0</emissionFactor>
+          <aboveGroundBiomass>130</aboveGroundBiomass>
+          <aboveGroundBiomassGrowth>1.5</aboveGroundBiomassGrowth>
+          <mfLandUse>1</mfLandUse>
+          <mfTillage>1</mfTillage>
+          <mfInput>1</mfInput>
+          <litter>2.1</litter>
+          <abandoned>false</abandoned>
+        </cltForestLand>
+        <cltForestLand>
+          <id>6</id>
+          <countryCode>BRM</countryCode>
+          <customName>Hill and Temperate Evergreen</customName>
+          <managed>true</managed>
+          <climateRegionId>5</climateRegionId>
+          <soilTypeId>2</soilTypeId>
+          <ecoZoneId>7</ecoZoneId>
+          <plantation>false</plantation>
+          <forestTypeId>7</forestTypeId>
+          <plantationTypeId>-1</plantationTypeId>
+          <continentTypeId>1</continentTypeId>
+          <ageClassId>2</ageClassId>
+          <growingStockLevelId>25</growingStockLevelId>
+          <carbonFraction>0.47</carbonFraction>
+          <ratio>0</ratio>
+          <bcef>2.28</bcef>
+          <emissionFactor>0</emissionFactor>
+          <aboveGroundBiomass>130</aboveGroundBiomass>
+          <aboveGroundBiomassGrowth>0.5</aboveGroundBiomassGrowth>
+          <mfLandUse>1</mfLandUse>
+          <mfTillage>1</mfTillage>
+          <mfInput>1</mfInput>
+          <litter>5.2</litter>
+          <abandoned>false</abandoned>
+        </cltForestLand>
+        <cltForestLand>
+          <id>8</id>
+          <countryCode>BRM</countryCode>
+          <customName>Subtropical Mountainous Forest</customName>
+          <managed>true</managed>
+          <climateRegionId>7</climateRegionId>
+          <soilTypeId>2</soilTypeId>
+          <ecoZoneId>9</ecoZoneId>
+          <plantation>false</plantation>
+          <forestTypeId>1</forestTypeId>
+          <plantationTypeId>-1</plantationTypeId>
+          <continentTypeId>1</continentTypeId>
+          <ageClassId>2</ageClassId>
+          <growingStockLevelId>12</growingStockLevelId>
+          <carbonFraction>0.47</carbonFraction>
+          <ratio>0</ratio>
+          <bcef>0.67</bcef>
+          <emissionFactor>0</emissionFactor>
+          <aboveGroundBiomass>280</aboveGroundBiomass>
+          <aboveGroundBiomassGrowth>2.2</aboveGroundBiomassGrowth>
+          <mfLandUse>1</mfLandUse>
+          <mfTillage>1</mfTillage>
+          <mfInput>1</mfInput>
+          <litter>2.1</litter>
+          <abandoned>false</abandoned>
+        </cltForestLand>
+        <cltForestLand>
+          <id>9</id>
+          <countryCode>BRM</countryCode>
+          <customName>Indaing</customName>
+          <managed>true</managed>
+          <climateRegionId>3</climateRegionId>
+          <soilTypeId>2</soilTypeId>
+          <ecoZoneId>3</ecoZoneId>
+          <plantation>false</plantation>
+          <forestTypeId>7</forestTypeId>
+          <plantationTypeId>-1</plantationTypeId>
+          <continentTypeId>1</continentTypeId>
+          <ageClassId>3</ageClassId>
+          <growingStockLevelId>27</growingStockLevelId>
+          <carbonFraction>0.47</carbonFraction>
+          <ratio>0</ratio>
+          <bcef>1.67</bcef>
+          <emissionFactor>0</emissionFactor>
+          <aboveGroundBiomass>180</aboveGroundBiomass>
+          <aboveGroundBiomassGrowth>2</aboveGroundBiomassGrowth>
+          <mfLandUse>1</mfLandUse>
+          <mfTillage>1</mfTillage>
+          <mfInput>1</mfInput>
+          <litter>2.1</litter>
+          <abandoned>false</abandoned>
+        </cltForestLand>
+      </forestLand>
+      <cropland>
+        <cltCropland>
+          <id>7</id>
+          <countryCode>BRM</countryCode>
+          <customName>Upland - Tropical Montane</customName>
+          <managed>true</managed>
+          <climateRegionId>5</climateRegionId>
+          <soilTypeId>2</soilTypeId>
+          <perennialCrops>false</perennialCrops>
+          <croplandTypeId>-1</croplandTypeId>
+          <riceEcosystem>true</riceEcosystem>
+          <mfLandUse>1.1</mfLandUse>
+          <mfTillage>1.22</mfTillage>
+          <mfInput>0.92</mfInput>
+          <annualEf>0</annualEf>
+          <harvestCycle>0</harvestCycle>
+          <biomassCarbonLoss>0</biomassCarbonLoss>
+          <biomassAccumulationRate>0</biomassAccumulationRate>
+          <biomassCarbonStock>10</biomassCarbonStock>
+          <carbonFraction>0.5</carbonFraction>
+        </cltCropland>
+        <cltCropland>
+          <id>8</id>
+          <countryCode>BRM</countryCode>
+          <customName>Rainfed - Tropical Long Dry</customName>
+          <managed>true</managed>
+          <climateRegionId>2</climateRegionId>
+          <soilTypeId>2</soilTypeId>
+          <perennialCrops>false</perennialCrops>
+          <croplandTypeId>-1</croplandTypeId>
+          <riceEcosystem>false</riceEcosystem>
+          <mfLandUse>1.1</mfLandUse>
+          <mfTillage>1</mfTillage>
+          <mfInput>1</mfInput>
+          <annualEf>0</annualEf>
+          <harvestCycle>0</harvestCycle>
+          <biomassCarbonLoss>0</biomassCarbonLoss>
+          <biomassAccumulationRate>0</biomassAccumulationRate>
+          <biomassCarbonStock>10</biomassCarbonStock>
+          <carbonFraction>0.47</carbonFraction>
+        </cltCropland>
+        <cltCropland>
+          <id>9</id>
+          <countryCode>BRM</countryCode>
+          <customName>Paddy Tropical Wet</customName>
+          <managed>true</managed>
+          <climateRegionId>1</climateRegionId>
+          <soilTypeId>1</soilTypeId>
+          <perennialCrops>false</perennialCrops>
+          <croplandTypeId>-1</croplandTypeId>
+          <riceEcosystem>true</riceEcosystem>
+          <mfLandUse>1.1</mfLandUse>
+          <mfTillage>1</mfTillage>
+          <mfInput>0.92</mfInput>
+          <annualEf>0</annualEf>
+          <harvestCycle>0</harvestCycle>
+          <biomassCarbonLoss>0</biomassCarbonLoss>
+          <biomassAccumulationRate>0</biomassAccumulationRate>
+          <biomassCarbonStock>10</biomassCarbonStock>
+          <carbonFraction>0.5</carbonFraction>
+        </cltCropland>
+        <cltCropland>
+          <id>10</id>
+          <countryCode>BRM</countryCode>
+          <customName>Rainfed - Tropical Wet</customName>
+          <managed>true</managed>
+          <climateRegionId>1</climateRegionId>
+          <soilTypeId>1</soilTypeId>
+          <perennialCrops>false</perennialCrops>
+          <croplandTypeId>-1</croplandTypeId>
+          <riceEcosystem>true</riceEcosystem>
+          <mfLandUse>1</mfLandUse>
+          <mfTillage>1</mfTillage>
+          <mfInput>1</mfInput>
+          <annualEf>0</annualEf>
+          <harvestCycle>0</harvestCycle>
+          <biomassCarbonLoss>0</biomassCarbonLoss>
+          <biomassAccumulationRate>0</biomassAccumulationRate>
+          <biomassCarbonStock>10</biomassCarbonStock>
+          <carbonFraction>0.47</carbonFraction>
+        </cltCropland>
+        <cltCropland>
+          <id>11</id>
+          <countryCode>BRM</countryCode>
+          <customName>Kaing - Short Dry</customName>
+          <managed>true</managed>
+          <climateRegionId>3</climateRegionId>
+          <soilTypeId>5</soilTypeId>
+          <perennialCrops>false</perennialCrops>
+          <croplandTypeId>-1</croplandTypeId>
+          <riceEcosystem>false</riceEcosystem>
+          <mfLandUse>1.1</mfLandUse>
+          <mfTillage>1</mfTillage>
+          <mfInput>0.92</mfInput>
+          <annualEf>0</annualEf>
+          <harvestCycle>0</harvestCycle>
+          <biomassCarbonLoss>0</biomassCarbonLoss>
+          <biomassAccumulationRate>0</biomassAccumulationRate>
+          <biomassCarbonStock>10</biomassCarbonStock>
+          <carbonFraction>0.5</carbonFraction>
+        </cltCropland>
+        <cltCropland>
+          <id>12</id>
+          <countryCode>BRM</countryCode>
+          <customName>Deep Water Tropical Wet</customName>
+          <managed>true</managed>
+          <climateRegionId>1</climateRegionId>
+          <soilTypeId>6</soilTypeId>
+          <perennialCrops>false</perennialCrops>
+          <croplandTypeId>-1</croplandTypeId>
+          <riceEcosystem>true</riceEcosystem>
+          <mfLandUse>1.1</mfLandUse>
+          <mfTillage>1</mfTillage>
+          <mfInput>0.92</mfInput>
+          <annualEf>0</annualEf>
+          <harvestCycle>0</harvestCycle>
+          <biomassCarbonLoss>0</biomassCarbonLoss>
+          <biomassAccumulationRate>0</biomassAccumulationRate>
+          <biomassCarbonStock>10</biomassCarbonStock>
+          <carbonFraction>0.47</carbonFraction>
+        </cltCropland>
+        <cltCropland>
+          <id>13</id>
+          <countryCode>BRM</countryCode>
+          <customName>Rice Drought</customName>
+          <managed>true</managed>
+          <climateRegionId>4</climateRegionId>
+          <soilTypeId>5</soilTypeId>
+          <perennialCrops>false</perennialCrops>
+          <croplandTypeId>-1</croplandTypeId>
+          <riceEcosystem>true</riceEcosystem>
+          <mfLandUse>1.1</mfLandUse>
+          <mfTillage>1</mfTillage>
+          <mfInput>0.95</mfInput>
+          <annualEf>0</annualEf>
+          <harvestCycle>0</harvestCycle>
+          <biomassCarbonLoss>0</biomassCarbonLoss>
+          <biomassAccumulationRate>0</biomassAccumulationRate>
+          <biomassCarbonStock>10</biomassCarbonStock>
+          <carbonFraction>0.5</carbonFraction>
+        </cltCropland>
+        <cltCropland>
+          <id>14</id>
+          <countryCode>BRM</countryCode>
+          <customName>Rice Irrigated</customName>
+          <managed>true</managed>
+          <climateRegionId>3</climateRegionId>
+          <soilTypeId>5</soilTypeId>
+          <perennialCrops>false</perennialCrops>
+          <croplandTypeId>-1</croplandTypeId>
+          <riceEcosystem>true</riceEcosystem>
+          <mfLandUse>1.1</mfLandUse>
+          <mfTillage>1</mfTillage>
+          <mfInput>0.92</mfInput>
+          <annualEf>0</annualEf>
+          <harvestCycle>0</harvestCycle>
+          <biomassCarbonLoss>0</biomassCarbonLoss>
+          <biomassAccumulationRate>0</biomassAccumulationRate>
+          <biomassCarbonStock>10</biomassCarbonStock>
+          <carbonFraction>0.5</carbonFraction>
+        </cltCropland>
+        <cltCropland>
+          <id>15</id>
+          <countryCode>BRM</countryCode>
+          <customName>Rice Rainfed</customName>
+          <managed>true</managed>
+          <climateRegionId>3</climateRegionId>
+          <soilTypeId>5</soilTypeId>
+          <perennialCrops>false</perennialCrops>
+          <croplandTypeId>-1</croplandTypeId>
+          <riceEcosystem>true</riceEcosystem>
+          <mfLandUse>1.1</mfLandUse>
+          <mfTillage>1</mfTillage>
+          <mfInput>0.92</mfInput>
+          <annualEf>0</annualEf>
+          <harvestCycle>0</harvestCycle>
+          <biomassCarbonLoss>0</biomassCarbonLoss>
+          <biomassAccumulationRate>0</biomassAccumulationRate>
+          <biomassCarbonStock>10</biomassCarbonStock>
+          <carbonFraction>0.5</carbonFraction>
+        </cltCropland>
+        <cltCropland>
+          <id>16</id>
+          <countryCode>BRM</countryCode>
+          <customName>Rice Salt Affected</customName>
+          <managed>true</managed>
+          <climateRegionId>1</climateRegionId>
+          <soilTypeId>5</soilTypeId>
+          <perennialCrops>false</perennialCrops>
+          <croplandTypeId>-1</croplandTypeId>
+          <riceEcosystem>true</riceEcosystem>
+          <mfLandUse>1.1</mfLandUse>
+          <mfTillage>1</mfTillage>
+          <mfInput>0.92</mfInput>
+          <annualEf>0</annualEf>
+          <harvestCycle>0</harvestCycle>
+          <biomassCarbonLoss>0</biomassCarbonLoss>
+          <biomassAccumulationRate>0</biomassAccumulationRate>
+          <biomassCarbonStock>10</biomassCarbonStock>
+          <carbonFraction>0.5</carbonFraction>
+        </cltCropland>
+        <cltCropland>
+          <id>17</id>
+          <countryCode>BRM</countryCode>
+          <customName>Rice Submerged</customName>
+          <managed>true</managed>
+          <climateRegionId>1</climateRegionId>
+          <soilTypeId>5</soilTypeId>
+          <perennialCrops>false</perennialCrops>
+          <croplandTypeId>-1</croplandTypeId>
+          <riceEcosystem>true</riceEcosystem>
+          <mfLandUse>1.1</mfLandUse>
+          <mfTillage>1</mfTillage>
+          <mfInput>0.92</mfInput>
+          <annualEf>0</annualEf>
+          <harvestCycle>0</harvestCycle>
+          <biomassCarbonLoss>0</biomassCarbonLoss>
+          <biomassAccumulationRate>0</biomassAccumulationRate>
+          <biomassCarbonStock>10</biomassCarbonStock>
+          <carbonFraction>0.5</carbonFraction>
+        </cltCropland>
+      </cropland>
+      <grassland>
+        <cltGrassland>
+          <id>1</id>
+          <countryCode>BRM</countryCode>
+          <customName>Unmanaged</customName>
+          <managed>false</managed>
+          <climateRegionId>-1</climateRegionId>
+          <soilTypeId>-1</soilTypeId>
+          <improvedGrassland>false</improvedGrassland>
+          <vegetationTypeId>-1</vegetationTypeId>
+          <expansionFactor>0</expansionFactor>
+          <mfLandUse>1</mfLandUse>
+          <mfTillage>1</mfTillage>
+          <mfInput>1</mfInput>
+          <annualEf>0</annualEf>
+          <biomassStockWoody>0</biomassStockWoody>
+          <biomassStockHerb>0</biomassStockHerb>
+          <biomassStockWoodyAfter>0</biomassStockWoodyAfter>
+          <biomassStockHerbAfter>0</biomassStockHerbAfter>
+          <carbonFractionWoody>0.5</carbonFractionWoody>
+          <carbonFractionHerb>0.47</carbonFractionHerb>
+        </cltGrassland>
+        <cltGrassland>
+          <id>3</id>
+          <countryCode>BRM</countryCode>
+          <customName>TM</customName>
+          <managed>true</managed>
+          <climateRegionId>5</climateRegionId>
+          <soilTypeId>2</soilTypeId>
+          <improvedGrassland>false</improvedGrassland>
+          <vegetationTypeId>23</vegetationTypeId>
+          <expansionFactor>0</expansionFactor>
+          <mfLandUse>1</mfLandUse>
+          <mfTillage>0.67</mfTillage>
+          <mfInput>1</mfInput>
+          <annualEf>0</annualEf>
+          <biomassStockWoody>0</biomassStockWoody>
+          <biomassStockHerb>0</biomassStockHerb>
+          <biomassStockWoodyAfter>0</biomassStockWoodyAfter>
+          <biomassStockHerbAfter>0</biomassStockHerbAfter>
+          <carbonFractionWoody>0.5</carbonFractionWoody>
+          <carbonFractionHerb>0.47</carbonFractionHerb>
+        </cltGrassland>
+        <cltGrassland>
+          <id>4</id>
+          <countryCode>BRM</countryCode>
+          <customName>Tropical Dry</customName>
+          <managed>true</managed>
+          <climateRegionId>4</climateRegionId>
+          <soilTypeId>2</soilTypeId>
+          <improvedGrassland>false</improvedGrassland>
+          <vegetationTypeId>15</vegetationTypeId>
+          <expansionFactor>0</expansionFactor>
+          <mfLandUse>1</mfLandUse>
+          <mfTillage>1</mfTillage>
+          <mfInput>1</mfInput>
+          <annualEf>0</annualEf>
+          <biomassStockWoody>0</biomassStockWoody>
+          <biomassStockHerb>8.7</biomassStockHerb>
+          <biomassStockWoodyAfter>0</biomassStockWoodyAfter>
+          <biomassStockHerbAfter>8.7</biomassStockHerbAfter>
+          <carbonFractionWoody>0.47</carbonFractionWoody>
+          <carbonFractionHerb>0.47</carbonFractionHerb>
+        </cltGrassland>
+        <cltGrassland>
+          <id>5</id>
+          <countryCode>BRM</countryCode>
+          <customName>Tropical Moist Deciduous</customName>
+          <managed>true</managed>
+          <climateRegionId>3</climateRegionId>
+          <soilTypeId>2</soilTypeId>
+          <improvedGrassland>false</improvedGrassland>
+          <vegetationTypeId>22</vegetationTypeId>
+          <expansionFactor>0</expansionFactor>
+          <mfLandUse>1</mfLandUse>
+          <mfTillage>1</mfTillage>
+          <mfInput>1</mfInput>
+          <annualEf>0</annualEf>
+          <biomassStockWoody>0</biomassStockWoody>
+          <biomassStockHerb>16.1</biomassStockHerb>
+          <biomassStockWoodyAfter>0</biomassStockWoodyAfter>
+          <biomassStockHerbAfter>16.1</biomassStockHerbAfter>
+          <carbonFractionWoody>0.47</carbonFractionWoody>
+          <carbonFractionHerb>0.47</carbonFractionHerb>
+        </cltGrassland>
+        <cltGrassland>
+          <id>6</id>
+          <countryCode>BRM</countryCode>
+          <customName>Tropical Rain Forest</customName>
+          <managed>true</managed>
+          <climateRegionId>1</climateRegionId>
+          <soilTypeId>1</soilTypeId>
+          <improvedGrassland>false</improvedGrassland>
+          <vegetationTypeId>20</vegetationTypeId>
+          <expansionFactor>0</expansionFactor>
+          <mfLandUse>1</mfLandUse>
+          <mfTillage>1</mfTillage>
+          <mfInput>1</mfInput>
+          <annualEf>0</annualEf>
+          <biomassStockWoody>0</biomassStockWoody>
+          <biomassStockHerb>16.1</biomassStockHerb>
+          <biomassStockWoodyAfter>0</biomassStockWoodyAfter>
+          <biomassStockHerbAfter>16.1</biomassStockHerbAfter>
+          <carbonFractionWoody>0.5</carbonFractionWoody>
+          <carbonFractionHerb>0.47</carbonFractionHerb>
+        </cltGrassland>
+        <cltGrassland>
+          <id>7</id>
+          <countryCode>BRM</countryCode>
+          <customName>Subtropical Mountainous Forest</customName>
+          <managed>true</managed>
+          <climateRegionId>9</climateRegionId>
+          <soilTypeId>2</soilTypeId>
+          <improvedGrassland>false</improvedGrassland>
+          <vegetationTypeId>3</vegetationTypeId>
+          <expansionFactor>0</expansionFactor>
+          <mfLandUse>1</mfLandUse>
+          <mfTillage>1</mfTillage>
+          <mfInput>1</mfInput>
+          <annualEf>0</annualEf>
+          <biomassStockWoody>0</biomassStockWoody>
+          <biomassStockHerb>13.6</biomassStockHerb>
+          <biomassStockWoodyAfter>0</biomassStockWoodyAfter>
+          <biomassStockHerbAfter>13.6</biomassStockHerbAfter>
+          <carbonFractionWoody>0.5</carbonFractionWoody>
+          <carbonFractionHerb>0.47</carbonFractionHerb>
+        </cltGrassland>
+      </grassland>
+      <wetland>
+        <cltWetland>
+          <id>1</id>
+          <countryCode>BRM</countryCode>
+          <customName>Unmanaged</customName>
+          <managed>false</managed>
+          <climateRegionId>-1</climateRegionId>
+          <soilTypeId>-1</soilTypeId>
+          <wetlandType>U</wetlandType>
+          <co2efValuePoor>0</co2efValuePoor>
+          <co2efValueRich>0</co2efValueRich>
+          <biomassStock>0</biomassStock>
+          <biomassStockBefore>0</biomassStockBefore>
+          <cfDryMatter>0.5</cfDryMatter>
+          <cfAirDryWeight>0</cfAirDryWeight>
+          <cfAirDryVolume>0</cfAirDryVolume>
+          <n2oefValue>0</n2oefValue>
+        </cltWetland>
+        <cltWetland>
+          <id>2</id>
+          <countryCode>BRM</countryCode>
+          <customName>Dam, Reservoir</customName>
+          <managed>true</managed>
+          <climateRegionId>2</climateRegionId>
+          <soilTypeId>7</soilTypeId>
+          <wetlandType>F</wetlandType>
+          <co2efValuePoor>0</co2efValuePoor>
+          <co2efValueRich>0</co2efValueRich>
+          <biomassStock>0</biomassStock>
+          <biomassStockBefore>0</biomassStockBefore>
+          <cfDryMatter>0.5</cfDryMatter>
+          <cfAirDryWeight>0</cfAirDryWeight>
+          <cfAirDryVolume>0</cfAirDryVolume>
+          <n2oefValue>0</n2oefValue>
+        </cltWetland>
+        <cltWetland>
+          <id>3</id>
+          <countryCode>BRM</countryCode>
+          <customName>Tropical Rain Forest</customName>
+          <managed>true</managed>
+          <climateRegionId>1</climateRegionId>
+          <soilTypeId>7</soilTypeId>
+          <wetlandType>O</wetlandType>
+          <co2efValuePoor>0</co2efValuePoor>
+          <co2efValueRich>0</co2efValueRich>
+          <biomassStock>0</biomassStock>
+          <biomassStockBefore>0</biomassStockBefore>
+          <cfDryMatter>0</cfDryMatter>
+          <cfAirDryWeight>0</cfAirDryWeight>
+          <cfAirDryVolume>0</cfAirDryVolume>
+          <n2oefValue>0</n2oefValue>
+        </cltWetland>
+        <cltWetland>
+          <id>4</id>
+          <countryCode>BRM</countryCode>
+          <customName>Tropical Moist Deciduous</customName>
+          <managed>true</managed>
+          <climateRegionId>3</climateRegionId>
+          <soilTypeId>7</soilTypeId>
+          <wetlandType>O</wetlandType>
+          <co2efValuePoor>0</co2efValuePoor>
+          <co2efValueRich>0</co2efValueRich>
+          <biomassStock>0</biomassStock>
+          <biomassStockBefore>0</biomassStockBefore>
+          <cfDryMatter>0</cfDryMatter>
+          <cfAirDryWeight>0</cfAirDryWeight>
+          <cfAirDryVolume>0</cfAirDryVolume>
+          <n2oefValue>0</n2oefValue>
+        </cltWetland>
+        <cltWetland>
+          <id>5</id>
+          <countryCode>BRM</countryCode>
+          <customName>Tropical Dry</customName>
+          <managed>true</managed>
+          <climateRegionId>4</climateRegionId>
+          <soilTypeId>7</soilTypeId>
+          <wetlandType>O</wetlandType>
+          <co2efValuePoor>0</co2efValuePoor>
+          <co2efValueRich>0</co2efValueRich>
+          <biomassStock>0</biomassStock>
+          <biomassStockBefore>0</biomassStockBefore>
+          <cfDryMatter>0</cfDryMatter>
+          <cfAirDryWeight>0</cfAirDryWeight>
+          <cfAirDryVolume>0</cfAirDryVolume>
+          <n2oefValue>0</n2oefValue>
+        </cltWetland>
+        <cltWetland>
+          <id>6</id>
+          <countryCode>BRM</countryCode>
+          <customName>Tropical Mountane</customName>
+          <managed>true</managed>
+          <climateRegionId>5</climateRegionId>
+          <soilTypeId>7</soilTypeId>
+          <wetlandType>O</wetlandType>
+          <co2efValuePoor>0</co2efValuePoor>
+          <co2efValueRich>0</co2efValueRich>
+          <biomassStock>0</biomassStock>
+          <biomassStockBefore>0</biomassStockBefore>
+          <cfDryMatter>0</cfDryMatter>
+          <cfAirDryWeight>0</cfAirDryWeight>
+          <cfAirDryVolume>0</cfAirDryVolume>
+          <n2oefValue>0</n2oefValue>
+        </cltWetland>
+      </wetland>
+      <settlement>
+        <cltSettlement>
+          <id>1</id>
+          <countryCode>BRM</countryCode>
+          <customName>Settlement</customName>
+          <managed>true</managed>
+          <climateRegionId>3</climateRegionId>
+          <soilTypeId>1</soilTypeId>
+          <mfLandUse>1</mfLandUse>
+          <mfTillage>1</mfTillage>
+          <mfInput>1</mfInput>
+          <annualEf>0</annualEf>
+          <biomassCarbonLoss>0</biomassCarbonLoss>
+          <biomassAccumulationRate>0</biomassAccumulationRate>
+          <biomassCarbonStock>0</biomassCarbonStock>
+          <biomassStock>0</biomassStock>
+          <carbonFraction>0.5</carbonFraction>
+        </cltSettlement>
+        <cltSettlement>
+          <id>2</id>
+          <countryCode>BRM</countryCode>
+          <customName>Tropical Rain Forest</customName>
+          <managed>true</managed>
+          <climateRegionId>1</climateRegionId>
+          <soilTypeId>1</soilTypeId>
+          <mfLandUse>1</mfLandUse>
+          <mfTillage>1</mfTillage>
+          <mfInput>1</mfInput>
+          <annualEf>0</annualEf>
+          <biomassCarbonLoss>0</biomassCarbonLoss>
+          <biomassAccumulationRate>0</biomassAccumulationRate>
+          <biomassCarbonStock>0</biomassCarbonStock>
+          <biomassStock>0</biomassStock>
+          <carbonFraction>0.5</carbonFraction>
+        </cltSettlement>
+        <cltSettlement>
+          <id>3</id>
+          <countryCode>BRM</countryCode>
+          <customName>Tropical Moist Deciduous</customName>
+          <managed>true</managed>
+          <climateRegionId>3</climateRegionId>
+          <soilTypeId>2</soilTypeId>
+          <mfLandUse>1</mfLandUse>
+          <mfTillage>1</mfTillage>
+          <mfInput>1</mfInput>
+          <annualEf>0</annualEf>
+          <biomassCarbonLoss>0</biomassCarbonLoss>
+          <biomassAccumulationRate>0</biomassAccumulationRate>
+          <biomassCarbonStock>0</biomassCarbonStock>
+          <biomassStock>0</biomassStock>
+          <carbonFraction>0.5</carbonFraction>
+        </cltSettlement>
+        <cltSettlement>
+          <id>4</id>
+          <countryCode>BRM</countryCode>
+          <customName>Tropical Dry</customName>
+          <managed>true</managed>
+          <climateRegionId>4</climateRegionId>
+          <soilTypeId>2</soilTypeId>
+          <mfLandUse>1</mfLandUse>
+          <mfTillage>1</mfTillage>
+          <mfInput>1</mfInput>
+          <annualEf>0</annualEf>
+          <biomassCarbonLoss>0</biomassCarbonLoss>
+          <biomassAccumulationRate>0</biomassAccumulationRate>
+          <biomassCarbonStock>0</biomassCarbonStock>
+          <biomassStock>0</biomassStock>
+          <carbonFraction>0.5</carbonFraction>
+        </cltSettlement>
+        <cltSettlement>
+          <id>5</id>
+          <countryCode>BRM</countryCode>
+          <customName>Tropical Montane</customName>
+          <managed>true</managed>
+          <climateRegionId>5</climateRegionId>
+          <soilTypeId>2</soilTypeId>
+          <mfLandUse>1</mfLandUse>
+          <mfTillage>1</mfTillage>
+          <mfInput>1</mfInput>
+          <annualEf>0</annualEf>
+          <biomassCarbonLoss>0</biomassCarbonLoss>
+          <biomassAccumulationRate>0</biomassAccumulationRate>
+          <biomassCarbonStock>0</biomassCarbonStock>
+          <biomassStock>0</biomassStock>
+          <carbonFraction>0.5</carbonFraction>
+        </cltSettlement>
+        <cltSettlement>
+          <id>6</id>
+          <countryCode>BRM</countryCode>
+          <customName>Subtropical Montane</customName>
+          <managed>true</managed>
+          <climateRegionId>7</climateRegionId>
+          <soilTypeId>2</soilTypeId>
+          <mfLandUse>1</mfLandUse>
+          <mfTillage>1</mfTillage>
+          <mfInput>1</mfInput>
+          <annualEf>0</annualEf>
+          <biomassCarbonLoss>0</biomassCarbonLoss>
+          <biomassAccumulationRate>0</biomassAccumulationRate>
+          <biomassCarbonStock>0</biomassCarbonStock>
+          <biomassStock>0</biomassStock>
+          <carbonFraction>0.5</carbonFraction>
+        </cltSettlement>
+      </settlement>
+      <otherland>
+        <cltOtherland>
+          <id>1</id>
+          <countryCode>BRM</countryCode>
+          <customName>Unmanaged</customName>
+          <managed>false</managed>
+          <climateRegionId>-1</climateRegionId>
+          <soilTypeId>-1</soilTypeId>
+          <mfLandUse>1</mfLandUse>
+          <mfTillage>1</mfTillage>
+          <mfInput>1</mfInput>
+          <annualEf>0</annualEf>
+          <biomassCarbonLoss>0</biomassCarbonLoss>
+          <biomassAccumulationRate>0</biomassAccumulationRate>
+          <biomassCarbonStock>0</biomassCarbonStock>
+          <biomassStock>0</biomassStock>
+          <carbonFraction>0.5</carbonFraction>
+        </cltOtherland>
+        <cltOtherland>
+          <id>2</id>
+          <countryCode>BRM</countryCode>
+          <customName>Tropical Wet</customName>
+          <managed>true</managed>
+          <climateRegionId>1</climateRegionId>
+          <soilTypeId>1</soilTypeId>
+          <mfLandUse>1</mfLandUse>
+          <mfTillage>1</mfTillage>
+          <mfInput>1</mfInput>
+          <annualEf>0</annualEf>
+          <biomassCarbonLoss>0</biomassCarbonLoss>
+          <biomassAccumulationRate>0</biomassAccumulationRate>
+          <biomassCarbonStock>0</biomassCarbonStock>
+          <biomassStock>0</biomassStock>
+          <carbonFraction>0.5</carbonFraction>
+        </cltOtherland>
+        <cltOtherland>
+          <id>3</id>
+          <countryCode>BRM</countryCode>
+          <customName>Tropical Moist Deciduous</customName>
+          <managed>true</managed>
+          <climateRegionId>3</climateRegionId>
+          <soilTypeId>2</soilTypeId>
+          <mfLandUse>1</mfLandUse>
+          <mfTillage>1</mfTillage>
+          <mfInput>1</mfInput>
+          <annualEf>0</annualEf>
+          <biomassCarbonLoss>0</biomassCarbonLoss>
+          <biomassAccumulationRate>0</biomassAccumulationRate>
+          <biomassCarbonStock>0</biomassCarbonStock>
+          <biomassStock>0</biomassStock>
+          <carbonFraction>0.5</carbonFraction>
+        </cltOtherland>
+        <cltOtherland>
+          <id>4</id>
+          <countryCode>BRM</countryCode>
+          <customName>Tropical Dry</customName>
+          <managed>true</managed>
+          <climateRegionId>4</climateRegionId>
+          <soilTypeId>2</soilTypeId>
+          <mfLandUse>1</mfLandUse>
+          <mfTillage>1</mfTillage>
+          <mfInput>1</mfInput>
+          <annualEf>0</annualEf>
+          <biomassCarbonLoss>0</biomassCarbonLoss>
+          <biomassAccumulationRate>0</biomassAccumulationRate>
+          <biomassCarbonStock>0</biomassCarbonStock>
+          <biomassStock>0</biomassStock>
+          <carbonFraction>0.5</carbonFraction>
+        </cltOtherland>
+        <cltOtherland>
+          <id>5</id>
+          <countryCode>BRM</countryCode>
+          <customName>Tropical Montane</customName>
+          <managed>true</managed>
+          <climateRegionId>5</climateRegionId>
+          <soilTypeId>2</soilTypeId>
+          <mfLandUse>1</mfLandUse>
+          <mfTillage>1</mfTillage>
+          <mfInput>1</mfInput>
+          <annualEf>0</annualEf>
+          <biomassCarbonLoss>0</biomassCarbonLoss>
+          <biomassAccumulationRate>0</biomassAccumulationRate>
+          <biomassCarbonStock>0</biomassCarbonStock>
+          <biomassStock>0</biomassStock>
+          <carbonFraction>0.5</carbonFraction>
+        </cltOtherland>
+        <cltOtherland>
+          <id>6</id>
+          <countryCode>BRM</countryCode>
+          <customName>Sub-Tropical</customName>
+          <managed>true</managed>
+          <climateRegionId>7</climateRegionId>
+          <soilTypeId>2</soilTypeId>
+          <mfLandUse>1</mfLandUse>
+          <mfTillage>1</mfTillage>
+          <mfInput>1</mfInput>
+          <annualEf>0</annualEf>
+          <biomassCarbonLoss>0</biomassCarbonLoss>
+          <biomassAccumulationRate>0</biomassAccumulationRate>
+          <biomassCarbonStock>0</biomassCarbonStock>
+          <biomassStock>0</biomassStock>
+          <carbonFraction>0.5</carbonFraction>
+        </cltOtherland>
+      </otherland>
+      <areaEntryTable>
+        <countryCode>BRM</countryCode>
+        <areaEntryTableRecord>
+          <ltIdInit>3</ltIdInit>
+          <cltIdInit>1</cltIdInit>
+          <ltIdFinal>3</ltIdFinal>
+          <cltIdFinal>1</cltIdFinal>
+          <area>0</area>
+        </areaEntryTableRecord>
+        <areaEntryTableRecord>
+          <ltIdInit>4</ltIdInit>
+          <cltIdInit>1</cltIdInit>
+          <ltIdFinal>4</ltIdFinal>
+          <cltIdFinal>1</cltIdFinal>
+          <area>0</area>
+        </areaEntryTableRecord>
+        <areaEntryTableRecord>
+          <ltIdInit>6</ltIdInit>
+          <cltIdInit>1</cltIdInit>
+          <ltIdFinal>6</ltIdFinal>
+          <cltIdFinal>1</cltIdFinal>
+          <area>24750</area>
+        </areaEntryTableRecord>
+        <areaEntryTableRecord>
+          <ltIdInit>1</ltIdInit>
+          <cltIdInit>4</cltIdInit>
+          <ltIdFinal>1</ltIdFinal>
+          <cltIdFinal>4</cltIdFinal>
+          <area>3177300</area>
+        </areaEntryTableRecord>
+        <areaEntryTableRecord>
+          <ltIdInit>1</ltIdInit>
+          <cltIdInit>6</cltIdInit>
+          <ltIdFinal>1</ltIdFinal>
+          <cltIdFinal>6</cltIdFinal>
+          <area>8260980</area>
+        </areaEntryTableRecord>
+        <areaEntryTableRecord>
+          <ltIdInit>1</ltIdInit>
+          <cltIdInit>3</cltIdInit>
+          <ltIdFinal>1</ltIdFinal>
+          <cltIdFinal>3</cltIdFinal>
+          <area>12391470</area>
+        </areaEntryTableRecord>
+        <areaEntryTableRecord>
+          <ltIdInit>1</ltIdInit>
+          <cltIdInit>2</cltIdInit>
+          <ltIdFinal>1</ltIdFinal>
+          <cltIdFinal>2</cltIdFinal>
+          <area>6354600</area>
+        </areaEntryTableRecord>
+        <areaEntryTableRecord>
+          <ltIdInit>1</ltIdInit>
+          <cltIdInit>1</cltIdInit>
+          <ltIdFinal>1</ltIdFinal>
+          <cltIdFinal>1</cltIdFinal>
+          <area>0</area>
+        </areaEntryTableRecord>
+        <areaEntryTableRecord>
+          <ltIdInit>4</ltIdInit>
+          <cltIdInit>2</cltIdInit>
+          <ltIdFinal>4</ltIdFinal>
+          <cltIdFinal>2</cltIdFinal>
+          <area>1780225</area>
+        </areaEntryTableRecord>
+        <areaEntryTableRecord>
+          <ltIdInit>5</ltIdInit>
+          <cltIdInit>1</cltIdInit>
+          <ltIdFinal>5</ltIdFinal>
+          <cltIdFinal>1</cltIdFinal>
+          <area>0</area>
+        </areaEntryTableRecord>
+        <areaEntryTableRecord>
+          <ltIdInit>1</ltIdInit>
+          <cltIdInit>8</cltIdInit>
+          <ltIdFinal>1</ltIdFinal>
+          <cltIdFinal>8</cltIdFinal>
+          <area>0</area>
+        </areaEntryTableRecord>
+        <areaEntryTableRecord>
+          <ltIdInit>2</ltIdInit>
+          <cltIdInit>7</cltIdInit>
+          <ltIdFinal>2</ltIdFinal>
+          <cltIdFinal>7</cltIdFinal>
+          <area>240334.92</area>
+        </areaEntryTableRecord>
+        <areaEntryTableRecord>
+          <ltIdInit>2</ltIdInit>
+          <cltIdInit>8</cltIdInit>
+          <ltIdFinal>2</ltIdFinal>
+          <cltIdFinal>8</cltIdFinal>
+          <area xsi:nil="true" />
+        </areaEntryTableRecord>
+        <areaEntryTableRecord>
+          <ltIdInit>2</ltIdInit>
+          <cltIdInit>10</cltIdInit>
+          <ltIdFinal>2</ltIdFinal>
+          <cltIdFinal>10</cltIdFinal>
+          <area xsi:nil="true" />
+        </areaEntryTableRecord>
+        <areaEntryTableRecord>
+          <ltIdInit>2</ltIdInit>
+          <cltIdInit>9</cltIdInit>
+          <ltIdFinal>2</ltIdFinal>
+          <cltIdFinal>9</cltIdFinal>
+          <area xsi:nil="true" />
+        </areaEntryTableRecord>
+        <areaEntryTableRecord>
+          <ltIdInit>2</ltIdInit>
+          <cltIdInit>11</cltIdInit>
+          <ltIdFinal>2</ltIdFinal>
+          <cltIdFinal>11</cltIdFinal>
+          <area xsi:nil="true" />
+        </areaEntryTableRecord>
+        <areaEntryTableRecord>
+          <ltIdInit>2</ltIdInit>
+          <cltIdInit>12</cltIdInit>
+          <ltIdFinal>2</ltIdFinal>
+          <cltIdFinal>12</cltIdFinal>
+          <area>400558.2</area>
+        </areaEntryTableRecord>
+        <areaEntryTableRecord>
+          <ltIdInit>3</ltIdInit>
+          <cltIdInit>3</cltIdInit>
+          <ltIdFinal>3</ltIdFinal>
+          <cltIdFinal>3</cltIdFinal>
+          <area>4392400</area>
+        </areaEntryTableRecord>
+        <areaEntryTableRecord>
+          <ltIdInit>2</ltIdInit>
+          <cltIdInit>7</cltIdInit>
+          <ltIdFinal>1</ltIdFinal>
+          <cltIdFinal>6</cltIdFinal>
+          <area>0</area>
+        </areaEntryTableRecord>
+        <areaEntryTableRecord>
+          <ltIdInit>1</ltIdInit>
+          <cltIdInit>6</cltIdInit>
+          <ltIdFinal>2</ltIdFinal>
+          <cltIdFinal>7</cltIdFinal>
+          <area>0</area>
+        </areaEntryTableRecord>
+        <areaEntryTableRecord>
+          <ltIdInit>1</ltIdInit>
+          <cltIdInit>6</cltIdInit>
+          <ltIdFinal>3</ltIdFinal>
+          <cltIdFinal>3</cltIdFinal>
+          <area>0</area>
+        </areaEntryTableRecord>
+        <areaEntryTableRecord>
+          <ltIdInit>5</ltIdInit>
+          <cltIdInit>6</cltIdInit>
+          <ltIdFinal>5</ltIdFinal>
+          <cltIdFinal>6</cltIdFinal>
+          <area>0</area>
+        </areaEntryTableRecord>
+        <areaEntryTableRecord>
+          <ltIdInit>5</ltIdInit>
+          <cltIdInit>5</cltIdInit>
+          <ltIdFinal>5</ltIdFinal>
+          <cltIdFinal>5</cltIdFinal>
+          <area>14900</area>
+        </areaEntryTableRecord>
+        <areaEntryTableRecord>
+          <ltIdInit>5</ltIdInit>
+          <cltIdInit>2</cltIdInit>
+          <ltIdFinal>5</ltIdFinal>
+          <cltIdFinal>2</cltIdFinal>
+          <area>57975</area>
+        </areaEntryTableRecord>
+        <areaEntryTableRecord>
+          <ltIdInit>5</ltIdInit>
+          <cltIdInit>4</cltIdInit>
+          <ltIdFinal>5</ltIdFinal>
+          <cltIdFinal>4</cltIdFinal>
+          <area>39500</area>
+        </areaEntryTableRecord>
+        <areaEntryTableRecord>
+          <ltIdInit>5</ltIdInit>
+          <cltIdInit>3</cltIdInit>
+          <ltIdFinal>5</ltIdFinal>
+          <cltIdFinal>3</cltIdFinal>
+          <area>33375</area>
+        </areaEntryTableRecord>
+        <areaEntryTableRecord>
+          <ltIdInit>3</ltIdInit>
+          <cltIdInit>7</cltIdInit>
+          <ltIdFinal>3</ltIdFinal>
+          <cltIdFinal>7</cltIdFinal>
+          <area>108550</area>
+        </areaEntryTableRecord>
+        <areaEntryTableRecord>
+          <ltIdInit>3</ltIdInit>
+          <cltIdInit>4</cltIdInit>
+          <ltIdFinal>3</ltIdFinal>
+          <cltIdFinal>4</cltIdFinal>
+          <area>655625</area>
+        </areaEntryTableRecord>
+        <areaEntryTableRecord>
+          <ltIdInit>3</ltIdInit>
+          <cltIdInit>5</cltIdInit>
+          <ltIdFinal>3</ltIdFinal>
+          <cltIdFinal>5</cltIdFinal>
+          <area>5949350</area>
+        </areaEntryTableRecord>
+        <areaEntryTableRecord>
+          <ltIdInit>3</ltIdInit>
+          <cltIdInit>6</cltIdInit>
+          <ltIdFinal>3</ltIdFinal>
+          <cltIdFinal>6</cltIdFinal>
+          <area>6568600</area>
+        </areaEntryTableRecord>
+        <areaEntryTableRecord>
+          <ltIdInit>4</ltIdInit>
+          <cltIdInit>4</cltIdInit>
+          <ltIdFinal>4</ltIdFinal>
+          <cltIdFinal>4</cltIdFinal>
+          <area>0</area>
+        </areaEntryTableRecord>
+        <areaEntryTableRecord>
+          <ltIdInit>4</ltIdInit>
+          <cltIdInit>3</cltIdInit>
+          <ltIdFinal>4</ltIdFinal>
+          <cltIdFinal>3</cltIdFinal>
+          <area xsi:nil="true" />
+        </areaEntryTableRecord>
+        <areaEntryTableRecord>
+          <ltIdInit>3</ltIdInit>
+          <cltIdInit>3</cltIdInit>
+          <ltIdFinal>1</ltIdFinal>
+          <cltIdFinal>6</cltIdFinal>
+          <area>0</area>
+        </areaEntryTableRecord>
+        <areaEntryTableRecord>
+          <ltIdInit>3</ltIdInit>
+          <cltIdInit>6</cltIdInit>
+          <ltIdFinal>2</ltIdFinal>
+          <cltIdFinal>9</cltIdFinal>
+          <area>0</area>
+        </areaEntryTableRecord>
+        <areaEntryTableRecord>
+          <ltIdInit>3</ltIdInit>
+          <cltIdInit>3</cltIdInit>
+          <ltIdFinal>2</ltIdFinal>
+          <cltIdFinal>7</cltIdFinal>
+          <area>0</area>
+        </areaEntryTableRecord>
+        <areaEntryTableRecord>
+          <ltIdInit>4</ltIdInit>
+          <cltIdInit>5</cltIdInit>
+          <ltIdFinal>4</ltIdFinal>
+          <cltIdFinal>5</cltIdFinal>
+          <area>0</area>
+        </areaEntryTableRecord>
+        <areaEntryTableRecord>
+          <ltIdInit>4</ltIdInit>
+          <cltIdInit>6</cltIdInit>
+          <ltIdFinal>4</ltIdFinal>
+          <cltIdFinal>6</cltIdFinal>
+          <area>0</area>
+        </areaEntryTableRecord>
+        <areaEntryTableRecord>
+          <ltIdInit>1</ltIdInit>
+          <cltIdInit>6</cltIdInit>
+          <ltIdFinal>5</ltIdFinal>
+          <cltIdFinal>5</cltIdFinal>
+          <area xsi:nil="true" />
+        </areaEntryTableRecord>
+        <areaEntryTableRecord>
+          <ltIdInit>1</ltIdInit>
+          <cltIdInit>8</cltIdInit>
+          <ltIdFinal>5</ltIdFinal>
+          <cltIdFinal>6</cltIdFinal>
+          <area xsi:nil="true" />
+        </areaEntryTableRecord>
+        <areaEntryTableRecord>
+          <ltIdInit>6</ltIdInit>
+          <cltIdInit>3</cltIdInit>
+          <ltIdFinal>6</ltIdFinal>
+          <cltIdFinal>3</cltIdFinal>
+          <area>16300</area>
+        </areaEntryTableRecord>
+        <areaEntryTableRecord>
+          <ltIdInit>6</ltIdInit>
+          <cltIdInit>4</cltIdInit>
+          <ltIdFinal>6</ltIdFinal>
+          <cltIdFinal>4</cltIdFinal>
+          <area>16850</area>
+        </areaEntryTableRecord>
+        <areaEntryTableRecord>
+          <ltIdInit>6</ltIdInit>
+          <cltIdInit>5</cltIdInit>
+          <ltIdFinal>6</ltIdFinal>
+          <cltIdFinal>5</cltIdFinal>
+          <area>1450</area>
+        </areaEntryTableRecord>
+        <areaEntryTableRecord>
+          <ltIdInit>6</ltIdInit>
+          <cltIdInit>2</cltIdInit>
+          <ltIdFinal>6</ltIdFinal>
+          <cltIdFinal>2</cltIdFinal>
+          <area>19775</area>
+        </areaEntryTableRecord>
+        <areaEntryTableRecord>
+          <ltIdInit>1</ltIdInit>
+          <cltIdInit>6</cltIdInit>
+          <ltIdFinal>6</ltIdFinal>
+          <cltIdFinal>5</cltIdFinal>
+          <area xsi:nil="true" />
+        </areaEntryTableRecord>
+        <areaEntryTableRecord>
+          <ltIdInit>2</ltIdInit>
+          <cltIdInit>9</cltIdInit>
+          <ltIdFinal>2</ltIdFinal>
+          <cltIdFinal>10</cltIdFinal>
+          <area xsi:nil="true" />
+        </areaEntryTableRecord>
+        <areaEntryTableRecord>
+          <ltIdInit>2</ltIdInit>
+          <cltIdInit>10</cltIdInit>
+          <ltIdFinal>2</ltIdFinal>
+          <cltIdFinal>9</cltIdFinal>
+          <area xsi:nil="true" />
+        </areaEntryTableRecord>
+        <areaEntryTableRecord>
+          <ltIdInit>1</ltIdInit>
+          <cltIdInit>3</cltIdInit>
+          <ltIdFinal>2</ltIdFinal>
+          <cltIdFinal>8</cltIdFinal>
+          <area>428984</area>
+        </areaEntryTableRecord>
+        <areaEntryTableRecord>
+          <ltIdInit>1</ltIdInit>
+          <cltIdInit>4</cltIdInit>
+          <ltIdFinal>5</ltIdFinal>
+          <cltIdFinal>4</cltIdFinal>
+          <area xsi:nil="true" />
+        </areaEntryTableRecord>
+        <areaEntryTableRecord>
+          <ltIdInit>1</ltIdInit>
+          <cltIdInit>4</cltIdInit>
+          <ltIdFinal>6</ltIdFinal>
+          <cltIdFinal>4</cltIdFinal>
+          <area xsi:nil="true" />
+        </areaEntryTableRecord>
+        <areaEntryTableRecord>
+          <ltIdInit>1</ltIdInit>
+          <cltIdInit>9</cltIdInit>
+          <ltIdFinal>1</ltIdFinal>
+          <cltIdFinal>9</cltIdFinal>
+          <area>1588650</area>
+        </areaEntryTableRecord>
+        <areaEntryTableRecord>
+          <ltIdInit>2</ltIdInit>
+          <cltIdInit>14</cltIdInit>
+          <ltIdFinal>2</ltIdFinal>
+          <cltIdFinal>14</cltIdFinal>
+          <area>1602232.8</area>
+        </areaEntryTableRecord>
+        <areaEntryTableRecord>
+          <ltIdInit>2</ltIdInit>
+          <cltIdInit>15</cltIdInit>
+          <ltIdFinal>2</ltIdFinal>
+          <cltIdFinal>15</cltIdFinal>
+          <area>3845358.72</area>
+        </areaEntryTableRecord>
+        <areaEntryTableRecord>
+          <ltIdInit>2</ltIdInit>
+          <cltIdInit>13</cltIdInit>
+          <ltIdFinal>2</ltIdFinal>
+          <cltIdFinal>13</cltIdFinal>
+          <area>961339.68</area>
+        </areaEntryTableRecord>
+        <areaEntryTableRecord>
+          <ltIdInit>2</ltIdInit>
+          <cltIdInit>16</cltIdInit>
+          <ltIdFinal>2</ltIdFinal>
+          <cltIdFinal>16</cltIdFinal>
+          <area>240334.92</area>
+        </areaEntryTableRecord>
+        <areaEntryTableRecord>
+          <ltIdInit>2</ltIdInit>
+          <cltIdInit>17</cltIdInit>
+          <ltIdFinal>2</ltIdFinal>
+          <cltIdFinal>17</cltIdFinal>
+          <area>721004.76</area>
+        </areaEntryTableRecord>
+      </areaEntryTable>
+      <annualAreaTable>
+        <countryCode>BRM</countryCode>
+        <annualAreaTableRecord>
+          <ltIdInit>4</ltIdInit>
+          <cltIdInit>2</cltIdInit>
+          <ltIdFinal>4</ltIdFinal>
+          <cltIdFinal>2</cltIdFinal>
+          <area>310231.497</area>
+        </annualAreaTableRecord>
+        <annualAreaTableRecord>
+          <ltIdInit>1</ltIdInit>
+          <cltIdInit>6</cltIdInit>
+          <ltIdFinal>2</ltIdFinal>
+          <cltIdFinal>7</cltIdFinal>
+          <area>0</area>
+        </annualAreaTableRecord>
+        <annualAreaTableRecord>
+          <ltIdInit>1</ltIdInit>
+          <cltIdInit>6</cltIdInit>
+          <ltIdFinal>3</ltIdFinal>
+          <cltIdFinal>3</cltIdFinal>
+          <area>0</area>
+        </annualAreaTableRecord>
+        <annualAreaTableRecord>
+          <ltIdInit>5</ltIdInit>
+          <cltIdInit>3</cltIdInit>
+          <ltIdFinal>5</ltIdFinal>
+          <cltIdFinal>3</cltIdFinal>
+          <area>75</area>
+        </annualAreaTableRecord>
+        <annualAreaTableRecord>
+          <ltIdInit>5</ltIdInit>
+          <cltIdInit>2</cltIdInit>
+          <ltIdFinal>5</ltIdFinal>
+          <cltIdFinal>2</cltIdFinal>
+          <area>25</area>
+        </annualAreaTableRecord>
+        <annualAreaTableRecord>
+          <ltIdInit>3</ltIdInit>
+          <cltIdInit>3</cltIdInit>
+          <ltIdFinal>2</ltIdFinal>
+          <cltIdFinal>7</cltIdFinal>
+          <area>0</area>
+        </annualAreaTableRecord>
+        <annualAreaTableRecord>
+          <ltIdInit>3</ltIdInit>
+          <cltIdInit>6</cltIdInit>
+          <ltIdFinal>2</ltIdFinal>
+          <cltIdFinal>9</cltIdFinal>
+          <area>0</area>
+        </annualAreaTableRecord>
+        <annualAreaTableRecord>
+          <ltIdInit>1</ltIdInit>
+          <cltIdInit>6</cltIdInit>
+          <ltIdFinal>6</ltIdFinal>
+          <cltIdFinal>5</cltIdFinal>
+          <area>0</area>
+        </annualAreaTableRecord>
+        <annualAreaTableRecord>
+          <ltIdInit>1</ltIdInit>
+          <cltIdInit>6</cltIdInit>
+          <ltIdFinal>5</ltIdFinal>
+          <cltIdFinal>5</cltIdFinal>
+          <area>0</area>
+        </annualAreaTableRecord>
+        <annualAreaTableRecord>
+          <ltIdInit>1</ltIdInit>
+          <cltIdInit>8</cltIdInit>
+          <ltIdFinal>5</ltIdFinal>
+          <cltIdFinal>6</cltIdFinal>
+          <area>0</area>
+        </annualAreaTableRecord>
+        <annualAreaTableRecord>
+          <ltIdInit>3</ltIdInit>
+          <cltIdInit>6</cltIdInit>
+          <ltIdFinal>2</ltIdFinal>
+          <cltIdFinal>10</cltIdFinal>
+          <area>0</area>
+        </annualAreaTableRecord>
+        <annualAreaTableRecord>
+          <ltIdInit>1</ltIdInit>
+          <cltIdInit>3</cltIdInit>
+          <ltIdFinal>2</ltIdFinal>
+          <cltIdFinal>8</cltIdFinal>
+          <area>428984</area>
+        </annualAreaTableRecord>
+        <annualAreaTableRecord>
+          <ltIdInit>1</ltIdInit>
+          <cltIdInit>4</cltIdInit>
+          <ltIdFinal>6</ltIdFinal>
+          <cltIdFinal>4</cltIdFinal>
+          <area>0</area>
+        </annualAreaTableRecord>
+      </annualAreaTable>
+      <socRefTable>
+        <countryCode>BRM</countryCode>
+        <socRefRecord>
+          <climateRegionId>1</climateRegionId>
+          <soilTypeId>2</soilTypeId>
+          <socRef>60</socRef>
+        </socRefRecord>
+        <socRefRecord>
+          <climateRegionId>3</climateRegionId>
+          <soilTypeId>1</soilTypeId>
+          <socRef>65</socRef>
+        </socRefRecord>
+        <socRefRecord>
+          <climateRegionId>4</climateRegionId>
+          <soilTypeId>1</soilTypeId>
+          <socRef>38</socRef>
+        </socRefRecord>
+        <socRefRecord>
+          <climateRegionId>5</climateRegionId>
+          <soilTypeId>2</soilTypeId>
+          <socRef>63</socRef>
+        </socRefRecord>
+        <socRefRecord>
+          <climateRegionId>1</climateRegionId>
+          <soilTypeId>1</soilTypeId>
+          <socRef>44</socRef>
+        </socRefRecord>
+        <socRefRecord>
+          <climateRegionId>5</climateRegionId>
+          <soilTypeId>8</soilTypeId>
+          <socRef>0</socRef>
+        </socRefRecord>
+        <socRefRecord>
+          <climateRegionId>2</climateRegionId>
+          <soilTypeId>1</soilTypeId>
+          <socRef>65</socRef>
+        </socRefRecord>
+        <socRefRecord>
+          <climateRegionId>1</climateRegionId>
+          <soilTypeId>6</soilTypeId>
+          <socRef>86</socRef>
+        </socRefRecord>
+        <socRefRecord>
+          <climateRegionId>3</climateRegionId>
+          <soilTypeId>2</soilTypeId>
+          <socRef>47</socRef>
+        </socRefRecord>
+        <socRefRecord>
+          <climateRegionId>7</climateRegionId>
+          <soilTypeId>2</soilTypeId>
+          <socRef>63</socRef>
+        </socRefRecord>
+        <socRefRecord>
+          <climateRegionId>4</climateRegionId>
+          <soilTypeId>2</soilTypeId>
+          <socRef>35</socRef>
+        </socRefRecord>
+        <socRefRecord>
+          <climateRegionId>9</climateRegionId>
+          <soilTypeId>2</soilTypeId>
+          <socRef>85</socRef>
+        </socRefRecord>
+        <socRefRecord>
+          <climateRegionId>2</climateRegionId>
+          <soilTypeId>2</soilTypeId>
+          <socRef>47</socRef>
+        </socRefRecord>
+        <socRefRecord>
+          <climateRegionId>4</climateRegionId>
+          <soilTypeId>5</soilTypeId>
+          <socRef>0</socRef>
+        </socRefRecord>
+        <socRefRecord>
+          <climateRegionId>3</climateRegionId>
+          <soilTypeId>5</soilTypeId>
+          <socRef>39</socRef>
+        </socRefRecord>
+        <socRefRecord>
+          <climateRegionId>1</climateRegionId>
+          <soilTypeId>5</soilTypeId>
+          <socRef>66</socRef>
+        </socRefRecord>
+      </socRefTable>
+    </landTypes>
+  </record>
+  <record xmlns="">
+    <worksheet3AParams>
+      <compostApplied>0</compostApplied>
+      <sewageSludgeApplied>0</sewageSludgeApplied>
+      <otherOrganic>0</otherOrganic>
+      <manureFeed>0</manureFeed>
+      <manureFuel>0</manureFuel>
+      <manureConstruction>0</manureConstruction>
+      <nToFloodedRice>0</nToFloodedRice>
+    </worksheet3AParams>
+  </record>
+  <record xmlns="">
+    <hwpParameters>
+      <hwpParameter>
+        <countryCode>BRM</countryCode>
+        <startingYear>1961</startingYear>
+        <swpHalfLife>30</swpHalfLife>
+        <ppHalfLife>2</ppHalfLife>
+        <cfSawnwood>0.5</cfSawnwood>
+        <cfWbp>0.295</cfWbp>
+        <cfPp>0.45</cfPp>
+        <cfCharcoal>0.765</cfCharcoal>
+        <cfBark>1.12</cfBark>
+        <includeOIR>false</includeOIR>
+        <hwpGrowthRate>0.0217</hwpGrowthRate>
+        <approach>1</approach>
+      </hwpParameter>
+    </hwpParameters>
+  </record>
+  <record xmlns="">
+    <worksheet3D1Data>
+      <ipccCode>3.D.1</ipccCode>
+      <worksheet3D1DataYear>
+        <countryCode>BRM</countryCode>
+        <hwpYear>1961</hwpYear>
+        <rwProd xsi:nil="true" />
+        <rwImp xsi:nil="true" />
+        <rwExp xsi:nil="true" />
+        <swProd>1600000</swProd>
+        <swImp xsi:nil="true" />
+        <swExp>73400</swExp>
+        <wbpProd xsi:nil="true" />
+        <wbpImp xsi:nil="true" />
+        <wbpExp xsi:nil="true" />
+        <ppProd xsi:nil="true" />
+        <ppImp xsi:nil="true" />
+        <ppExp xsi:nil="true" />
+        <wpImp xsi:nil="true" />
+        <wpExp xsi:nil="true" />
+        <irProd>666000</irProd>
+        <irImp xsi:nil="true" />
+        <irExp xsi:nil="true" />
+        <oirProd xsi:nil="true" />
+        <oirImp xsi:nil="true" />
+        <oirExp xsi:nil="true" />
+        <chipsImp xsi:nil="true" />
+        <chipsExp xsi:nil="true" />
+        <charImp xsi:nil="true" />
+        <charExp xsi:nil="true" />
+        <resImp xsi:nil="true" />
+        <resExp xsi:nil="true" />
+        <documentation xsi:nil="true" />
+      </worksheet3D1DataYear>
+      <worksheet3D1DataYear>
+        <countryCode>BRM</countryCode>
+        <hwpYear>1962</hwpYear>
+        <rwProd xsi:nil="true" />
+        <rwImp xsi:nil="true" />
+        <rwExp xsi:nil="true" />
+        <swProd>1419000</swProd>
+        <swImp xsi:nil="true" />
+        <swExp>97500</swExp>
+        <wbpProd xsi:nil="true" />
+        <wbpImp xsi:nil="true" />
+        <wbpExp xsi:nil="true" />
+        <ppProd xsi:nil="true" />
+        <ppImp xsi:nil="true" />
+        <ppExp xsi:nil="true" />
+        <wpImp xsi:nil="true" />
+        <wpExp xsi:nil="true" />
+        <irProd>680000</irProd>
+        <irImp xsi:nil="true" />
+        <irExp xsi:nil="true" />
+        <oirProd xsi:nil="true" />
+        <oirImp xsi:nil="true" />
+        <oirExp xsi:nil="true" />
+        <chipsImp xsi:nil="true" />
+        <chipsExp xsi:nil="true" />
+        <charImp xsi:nil="true" />
+        <charExp xsi:nil="true" />
+        <resImp xsi:nil="true" />
+        <resExp xsi:nil="true" />
+        <documentation xsi:nil="true" />
+      </worksheet3D1DataYear>
+      <worksheet3D1DataYear>
+        <countryCode>BRM</countryCode>
+        <hwpYear>1963</hwpYear>
+        <rwProd xsi:nil="true" />
+        <rwImp xsi:nil="true" />
+        <rwExp xsi:nil="true" />
+        <swProd>1450000</swProd>
+        <swImp xsi:nil="true" />
+        <swExp>140000</swExp>
+        <wbpProd xsi:nil="true" />
+        <wbpImp xsi:nil="true" />
+        <wbpExp xsi:nil="true" />
+        <ppProd xsi:nil="true" />
+        <ppImp xsi:nil="true" />
+        <ppExp xsi:nil="true" />
+        <wpImp xsi:nil="true" />
+        <wpExp xsi:nil="true" />
+        <irProd>694000</irProd>
+        <irImp xsi:nil="true" />
+        <irExp xsi:nil="true" />
+        <oirProd xsi:nil="true" />
+        <oirImp xsi:nil="true" />
+        <oirExp xsi:nil="true" />
+        <chipsImp xsi:nil="true" />
+        <chipsExp xsi:nil="true" />
+        <charImp xsi:nil="true" />
+        <charExp xsi:nil="true" />
+        <resImp xsi:nil="true" />
+        <resExp xsi:nil="true" />
+        <documentation xsi:nil="true" />
+      </worksheet3D1DataYear>
+      <worksheet3D1DataYear>
+        <countryCode>BRM</countryCode>
+        <hwpYear>1964</hwpYear>
+        <rwProd xsi:nil="true" />
+        <rwImp xsi:nil="true" />
+        <rwExp xsi:nil="true" />
+        <swProd>1480000</swProd>
+        <swImp xsi:nil="true" />
+        <swExp>135000</swExp>
+        <wbpProd xsi:nil="true" />
+        <wbpImp xsi:nil="true" />
+        <wbpExp xsi:nil="true" />
+        <ppProd xsi:nil="true" />
+        <ppImp xsi:nil="true" />
+        <ppExp xsi:nil="true" />
+        <wpImp xsi:nil="true" />
+        <wpExp xsi:nil="true" />
+        <irProd>709000</irProd>
+        <irImp xsi:nil="true" />
+        <irExp xsi:nil="true" />
+        <oirProd xsi:nil="true" />
+        <oirImp xsi:nil="true" />
+        <oirExp xsi:nil="true" />
+        <chipsImp xsi:nil="true" />
+        <chipsExp xsi:nil="true" />
+        <charImp xsi:nil="true" />
+        <charExp xsi:nil="true" />
+        <resImp xsi:nil="true" />
+        <resExp xsi:nil="true" />
+        <documentation xsi:nil="true" />
+      </worksheet3D1DataYear>
+      <worksheet3D1DataYear>
+        <countryCode>BRM</countryCode>
+        <hwpYear>1965</hwpYear>
+        <rwProd xsi:nil="true" />
+        <rwImp xsi:nil="true" />
+        <rwExp xsi:nil="true" />
+        <swProd>1520000</swProd>
+        <swImp xsi:nil="true" />
+        <swExp>122000</swExp>
+        <wbpProd xsi:nil="true" />
+        <wbpImp xsi:nil="true" />
+        <wbpExp xsi:nil="true" />
+        <ppProd xsi:nil="true" />
+        <ppImp xsi:nil="true" />
+        <ppExp xsi:nil="true" />
+        <wpImp xsi:nil="true" />
+        <wpExp xsi:nil="true" />
+        <irProd>725000</irProd>
+        <irImp xsi:nil="true" />
+        <irExp xsi:nil="true" />
+        <oirProd xsi:nil="true" />
+        <oirImp xsi:nil="true" />
+        <oirExp xsi:nil="true" />
+        <chipsImp xsi:nil="true" />
+        <chipsExp xsi:nil="true" />
+        <charImp xsi:nil="true" />
+        <charExp xsi:nil="true" />
+        <resImp xsi:nil="true" />
+        <resExp xsi:nil="true" />
+        <documentation xsi:nil="true" />
+      </worksheet3D1DataYear>
+      <worksheet3D1DataYear>
+        <countryCode>BRM</countryCode>
+        <hwpYear>1966</hwpYear>
+        <rwProd xsi:nil="true" />
+        <rwImp xsi:nil="true" />
+        <rwExp xsi:nil="true" />
+        <swProd>1552000</swProd>
+        <swImp xsi:nil="true" />
+        <swExp>100800</swExp>
+        <wbpProd xsi:nil="true" />
+        <wbpImp xsi:nil="true" />
+        <wbpExp xsi:nil="true" />
+        <ppProd xsi:nil="true" />
+        <ppImp xsi:nil="true" />
+        <ppExp xsi:nil="true" />
+        <wpImp xsi:nil="true" />
+        <wpExp xsi:nil="true" />
+        <irProd>741000</irProd>
+        <irImp xsi:nil="true" />
+        <irExp xsi:nil="true" />
+        <oirProd xsi:nil="true" />
+        <oirImp xsi:nil="true" />
+        <oirExp xsi:nil="true" />
+        <chipsImp xsi:nil="true" />
+        <chipsExp xsi:nil="true" />
+        <charImp xsi:nil="true" />
+        <charExp xsi:nil="true" />
+        <resImp xsi:nil="true" />
+        <resExp xsi:nil="true" />
+        <documentation xsi:nil="true" />
+      </worksheet3D1DataYear>
+      <worksheet3D1DataYear>
+        <countryCode>BRM</countryCode>
+        <hwpYear>1967</hwpYear>
+        <rwProd xsi:nil="true" />
+        <rwImp xsi:nil="true" />
+        <rwExp xsi:nil="true" />
+        <swProd>1817000</swProd>
+        <swImp xsi:nil="true" />
+        <swExp>52400</swExp>
+        <wbpProd xsi:nil="true" />
+        <wbpImp xsi:nil="true" />
+        <wbpExp xsi:nil="true" />
+        <ppProd xsi:nil="true" />
+        <ppImp xsi:nil="true" />
+        <ppExp xsi:nil="true" />
+        <wpImp xsi:nil="true" />
+        <wpExp xsi:nil="true" />
+        <irProd>758000</irProd>
+        <irImp xsi:nil="true" />
+        <irExp xsi:nil="true" />
+        <oirProd xsi:nil="true" />
+        <oirImp xsi:nil="true" />
+        <oirExp xsi:nil="true" />
+        <chipsImp xsi:nil="true" />
+        <chipsExp xsi:nil="true" />
+        <charImp xsi:nil="true" />
+        <charExp xsi:nil="true" />
+        <resImp xsi:nil="true" />
+        <resExp xsi:nil="true" />
+        <documentation xsi:nil="true" />
+      </worksheet3D1DataYear>
+      <worksheet3D1DataYear>
+        <countryCode>BRM</countryCode>
+        <hwpYear>1968</hwpYear>
+        <rwProd xsi:nil="true" />
+        <rwImp xsi:nil="true" />
+        <rwExp xsi:nil="true" />
+        <swProd>1731000</swProd>
+        <swImp xsi:nil="true" />
+        <swExp>71900</swExp>
+        <wbpProd xsi:nil="true" />
+        <wbpImp xsi:nil="true" />
+        <wbpExp xsi:nil="true" />
+        <ppProd xsi:nil="true" />
+        <ppImp xsi:nil="true" />
+        <ppExp xsi:nil="true" />
+        <wpImp xsi:nil="true" />
+        <wpExp xsi:nil="true" />
+        <irProd>775000</irProd>
+        <irImp xsi:nil="true" />
+        <irExp xsi:nil="true" />
+        <oirProd xsi:nil="true" />
+        <oirImp xsi:nil="true" />
+        <oirExp xsi:nil="true" />
+        <chipsImp xsi:nil="true" />
+        <chipsExp xsi:nil="true" />
+        <charImp xsi:nil="true" />
+        <charExp xsi:nil="true" />
+        <resImp xsi:nil="true" />
+        <resExp xsi:nil="true" />
+        <documentation xsi:nil="true" />
+      </worksheet3D1DataYear>
+      <worksheet3D1DataYear>
+        <countryCode>BRM</countryCode>
+        <hwpYear>1969</hwpYear>
+        <rwProd xsi:nil="true" />
+        <rwImp xsi:nil="true" />
+        <rwExp xsi:nil="true" />
+        <swProd>1728000</swProd>
+        <swImp xsi:nil="true" />
+        <swExp>80900</swExp>
+        <wbpProd xsi:nil="true" />
+        <wbpImp xsi:nil="true" />
+        <wbpExp xsi:nil="true" />
+        <ppProd xsi:nil="true" />
+        <ppImp xsi:nil="true" />
+        <ppExp xsi:nil="true" />
+        <wpImp xsi:nil="true" />
+        <wpExp xsi:nil="true" />
+        <irProd>794000</irProd>
+        <irImp xsi:nil="true" />
+        <irExp xsi:nil="true" />
+        <oirProd xsi:nil="true" />
+        <oirImp xsi:nil="true" />
+        <oirExp xsi:nil="true" />
+        <chipsImp xsi:nil="true" />
+        <chipsExp xsi:nil="true" />
+        <charImp xsi:nil="true" />
+        <charExp xsi:nil="true" />
+        <resImp xsi:nil="true" />
+        <resExp xsi:nil="true" />
+        <documentation xsi:nil="true" />
+      </worksheet3D1DataYear>
+      <worksheet3D1DataYear>
+        <countryCode>BRM</countryCode>
+        <hwpYear>1970</hwpYear>
+        <rwProd xsi:nil="true" />
+        <rwImp xsi:nil="true" />
+        <rwExp xsi:nil="true" />
+        <swProd>1737000</swProd>
+        <swImp xsi:nil="true" />
+        <swExp>57900</swExp>
+        <wbpProd xsi:nil="true" />
+        <wbpImp xsi:nil="true" />
+        <wbpExp xsi:nil="true" />
+        <ppProd xsi:nil="true" />
+        <ppImp xsi:nil="true" />
+        <ppExp xsi:nil="true" />
+        <wpImp xsi:nil="true" />
+        <wpExp xsi:nil="true" />
+        <irProd>813000</irProd>
+        <irImp xsi:nil="true" />
+        <irExp xsi:nil="true" />
+        <oirProd xsi:nil="true" />
+        <oirImp xsi:nil="true" />
+        <oirExp xsi:nil="true" />
+        <chipsImp xsi:nil="true" />
+        <chipsExp xsi:nil="true" />
+        <charImp xsi:nil="true" />
+        <charExp xsi:nil="true" />
+        <resImp xsi:nil="true" />
+        <resExp xsi:nil="true" />
+        <documentation xsi:nil="true" />
+      </worksheet3D1DataYear>
+      <worksheet3D1DataYear>
+        <countryCode>BRM</countryCode>
+        <hwpYear>1971</hwpYear>
+        <rwProd xsi:nil="true" />
+        <rwImp xsi:nil="true" />
+        <rwExp xsi:nil="true" />
+        <swProd>1776000</swProd>
+        <swImp xsi:nil="true" />
+        <swExp>113200</swExp>
+        <wbpProd xsi:nil="true" />
+        <wbpImp xsi:nil="true" />
+        <wbpExp xsi:nil="true" />
+        <ppProd xsi:nil="true" />
+        <ppImp xsi:nil="true" />
+        <ppExp xsi:nil="true" />
+        <wpImp xsi:nil="true" />
+        <wpExp xsi:nil="true" />
+        <irProd>832000</irProd>
+        <irImp xsi:nil="true" />
+        <irExp xsi:nil="true" />
+        <oirProd xsi:nil="true" />
+        <oirImp xsi:nil="true" />
+        <oirExp xsi:nil="true" />
+        <chipsImp xsi:nil="true" />
+        <chipsExp xsi:nil="true" />
+        <charImp xsi:nil="true" />
+        <charExp xsi:nil="true" />
+        <resImp xsi:nil="true" />
+        <resExp xsi:nil="true" />
+        <documentation xsi:nil="true" />
+      </worksheet3D1DataYear>
+      <worksheet3D1DataYear>
+        <countryCode>BRM</countryCode>
+        <hwpYear>1972</hwpYear>
+        <rwProd xsi:nil="true" />
+        <rwImp xsi:nil="true" />
+        <rwExp xsi:nil="true" />
+        <swProd>1704000</swProd>
+        <swImp xsi:nil="true" />
+        <swExp>111300</swExp>
+        <wbpProd xsi:nil="true" />
+        <wbpImp xsi:nil="true" />
+        <wbpExp xsi:nil="true" />
+        <ppProd xsi:nil="true" />
+        <ppImp xsi:nil="true" />
+        <ppExp xsi:nil="true" />
+        <wpImp xsi:nil="true" />
+        <wpExp xsi:nil="true" />
+        <irProd>852000</irProd>
+        <irImp xsi:nil="true" />
+        <irExp xsi:nil="true" />
+        <oirProd xsi:nil="true" />
+        <oirImp xsi:nil="true" />
+        <oirExp xsi:nil="true" />
+        <chipsImp xsi:nil="true" />
+        <chipsExp xsi:nil="true" />
+        <charImp xsi:nil="true" />
+        <charExp xsi:nil="true" />
+        <resImp xsi:nil="true" />
+        <resExp xsi:nil="true" />
+        <documentation xsi:nil="true" />
+      </worksheet3D1DataYear>
+      <worksheet3D1DataYear>
+        <countryCode>BRM</countryCode>
+        <hwpYear>1973</hwpYear>
+        <rwProd xsi:nil="true" />
+        <rwImp xsi:nil="true" />
+        <rwExp xsi:nil="true" />
+        <swProd>1793000</swProd>
+        <swImp xsi:nil="true" />
+        <swExp>171700</swExp>
+        <wbpProd xsi:nil="true" />
+        <wbpImp xsi:nil="true" />
+        <wbpExp xsi:nil="true" />
+        <ppProd xsi:nil="true" />
+        <ppImp xsi:nil="true" />
+        <ppExp xsi:nil="true" />
+        <wpImp xsi:nil="true" />
+        <wpExp xsi:nil="true" />
+        <irProd>872000</irProd>
+        <irImp xsi:nil="true" />
+        <irExp xsi:nil="true" />
+        <oirProd xsi:nil="true" />
+        <oirImp xsi:nil="true" />
+        <oirExp xsi:nil="true" />
+        <chipsImp xsi:nil="true" />
+        <chipsExp xsi:nil="true" />
+        <charImp xsi:nil="true" />
+        <charExp xsi:nil="true" />
+        <resImp xsi:nil="true" />
+        <resExp xsi:nil="true" />
+        <documentation xsi:nil="true" />
+      </worksheet3D1DataYear>
+      <worksheet3D1DataYear>
+        <countryCode>BRM</countryCode>
+        <hwpYear>1974</hwpYear>
+        <rwProd xsi:nil="true" />
+        <rwImp xsi:nil="true" />
+        <rwExp xsi:nil="true" />
+        <swProd>2026000</swProd>
+        <swImp xsi:nil="true" />
+        <swExp>85900</swExp>
+        <wbpProd xsi:nil="true" />
+        <wbpImp xsi:nil="true" />
+        <wbpExp xsi:nil="true" />
+        <ppProd xsi:nil="true" />
+        <ppImp xsi:nil="true" />
+        <ppExp xsi:nil="true" />
+        <wpImp xsi:nil="true" />
+        <wpExp xsi:nil="true" />
+        <irProd>892000</irProd>
+        <irImp xsi:nil="true" />
+        <irExp xsi:nil="true" />
+        <oirProd xsi:nil="true" />
+        <oirImp xsi:nil="true" />
+        <oirExp xsi:nil="true" />
+        <chipsImp xsi:nil="true" />
+        <chipsExp xsi:nil="true" />
+        <charImp xsi:nil="true" />
+        <charExp xsi:nil="true" />
+        <resImp xsi:nil="true" />
+        <resExp xsi:nil="true" />
+        <documentation xsi:nil="true" />
+      </worksheet3D1DataYear>
+      <worksheet3D1DataYear>
+        <countryCode>BRM</countryCode>
+        <hwpYear>1975</hwpYear>
+        <rwProd xsi:nil="true" />
+        <rwImp xsi:nil="true" />
+        <rwExp xsi:nil="true" />
+        <swProd>1840000</swProd>
+        <swImp xsi:nil="true" />
+        <swExp>66200</swExp>
+        <wbpProd xsi:nil="true" />
+        <wbpImp xsi:nil="true" />
+        <wbpExp xsi:nil="true" />
+        <ppProd xsi:nil="true" />
+        <ppImp xsi:nil="true" />
+        <ppExp xsi:nil="true" />
+        <wpImp xsi:nil="true" />
+        <wpExp xsi:nil="true" />
+        <irProd>913000</irProd>
+        <irImp xsi:nil="true" />
+        <irExp xsi:nil="true" />
+        <oirProd xsi:nil="true" />
+        <oirImp xsi:nil="true" />
+        <oirExp xsi:nil="true" />
+        <chipsImp xsi:nil="true" />
+        <chipsExp xsi:nil="true" />
+        <charImp xsi:nil="true" />
+        <charExp xsi:nil="true" />
+        <resImp xsi:nil="true" />
+        <resExp xsi:nil="true" />
+        <documentation xsi:nil="true" />
+      </worksheet3D1DataYear>
+      <worksheet3D1DataYear>
+        <countryCode>BRM</countryCode>
+        <hwpYear>1976</hwpYear>
+        <rwProd xsi:nil="true" />
+        <rwImp xsi:nil="true" />
+        <rwExp xsi:nil="true" />
+        <swProd>1909000</swProd>
+        <swImp xsi:nil="true" />
+        <swExp>57000</swExp>
+        <wbpProd xsi:nil="true" />
+        <wbpImp xsi:nil="true" />
+        <wbpExp xsi:nil="true" />
+        <ppProd xsi:nil="true" />
+        <ppImp xsi:nil="true" />
+        <ppExp xsi:nil="true" />
+        <wpImp xsi:nil="true" />
+        <wpExp xsi:nil="true" />
+        <irProd>933000</irProd>
+        <irImp xsi:nil="true" />
+        <irExp xsi:nil="true" />
+        <oirProd xsi:nil="true" />
+        <oirImp xsi:nil="true" />
+        <oirExp xsi:nil="true" />
+        <chipsImp xsi:nil="true" />
+        <chipsExp xsi:nil="true" />
+        <charImp xsi:nil="true" />
+        <charExp xsi:nil="true" />
+        <resImp xsi:nil="true" />
+        <resExp xsi:nil="true" />
+        <documentation xsi:nil="true" />
+      </worksheet3D1DataYear>
+      <worksheet3D1DataYear>
+        <countryCode>BRM</countryCode>
+        <hwpYear>1977</hwpYear>
+        <rwProd xsi:nil="true" />
+        <rwImp xsi:nil="true" />
+        <rwExp xsi:nil="true" />
+        <swProd>2035000</swProd>
+        <swImp xsi:nil="true" />
+        <swExp>61900</swExp>
+        <wbpProd xsi:nil="true" />
+        <wbpImp xsi:nil="true" />
+        <wbpExp xsi:nil="true" />
+        <ppProd xsi:nil="true" />
+        <ppImp xsi:nil="true" />
+        <ppExp xsi:nil="true" />
+        <wpImp xsi:nil="true" />
+        <wpExp xsi:nil="true" />
+        <irProd>953000</irProd>
+        <irImp xsi:nil="true" />
+        <irExp xsi:nil="true" />
+        <oirProd xsi:nil="true" />
+        <oirImp xsi:nil="true" />
+        <oirExp xsi:nil="true" />
+        <chipsImp xsi:nil="true" />
+        <chipsExp xsi:nil="true" />
+        <charImp xsi:nil="true" />
+        <charExp xsi:nil="true" />
+        <resImp xsi:nil="true" />
+        <resExp xsi:nil="true" />
+        <documentation xsi:nil="true" />
+      </worksheet3D1DataYear>
+      <worksheet3D1DataYear>
+        <countryCode>BRM</countryCode>
+        <hwpYear>1978</hwpYear>
+        <rwProd xsi:nil="true" />
+        <rwImp xsi:nil="true" />
+        <rwExp xsi:nil="true" />
+        <swProd>2622000</swProd>
+        <swImp xsi:nil="true" />
+        <swExp>76700</swExp>
+        <wbpProd xsi:nil="true" />
+        <wbpImp xsi:nil="true" />
+        <wbpExp xsi:nil="true" />
+        <ppProd xsi:nil="true" />
+        <ppImp xsi:nil="true" />
+        <ppExp xsi:nil="true" />
+        <wpImp xsi:nil="true" />
+        <wpExp xsi:nil="true" />
+        <irProd>973000</irProd>
+        <irImp xsi:nil="true" />
+        <irExp xsi:nil="true" />
+        <oirProd xsi:nil="true" />
+        <oirImp xsi:nil="true" />
+        <oirExp xsi:nil="true" />
+        <chipsImp xsi:nil="true" />
+        <chipsExp xsi:nil="true" />
+        <charImp xsi:nil="true" />
+        <charExp xsi:nil="true" />
+        <resImp xsi:nil="true" />
+        <resExp xsi:nil="true" />
+        <documentation xsi:nil="true" />
+      </worksheet3D1DataYear>
+      <worksheet3D1DataYear>
+        <countryCode>BRM</countryCode>
+        <hwpYear>1979</hwpYear>
+        <rwProd xsi:nil="true" />
+        <rwImp xsi:nil="true" />
+        <rwExp xsi:nil="true" />
+        <swProd>2751000</swProd>
+        <swImp xsi:nil="true" />
+        <swExp>143600</swExp>
+        <wbpProd xsi:nil="true" />
+        <wbpImp xsi:nil="true" />
+        <wbpExp xsi:nil="true" />
+        <ppProd xsi:nil="true" />
+        <ppImp xsi:nil="true" />
+        <ppExp xsi:nil="true" />
+        <wpImp xsi:nil="true" />
+        <wpExp xsi:nil="true" />
+        <irProd>993000</irProd>
+        <irImp xsi:nil="true" />
+        <irExp xsi:nil="true" />
+        <oirProd xsi:nil="true" />
+        <oirImp xsi:nil="true" />
+        <oirExp xsi:nil="true" />
+        <chipsImp xsi:nil="true" />
+        <chipsExp xsi:nil="true" />
+        <charImp xsi:nil="true" />
+        <charExp xsi:nil="true" />
+        <resImp xsi:nil="true" />
+        <resExp xsi:nil="true" />
+        <documentation xsi:nil="true" />
+      </worksheet3D1DataYear>
+      <worksheet3D1DataYear>
+        <countryCode>BRM</countryCode>
+        <hwpYear>1980</hwpYear>
+        <rwProd xsi:nil="true" />
+        <rwImp xsi:nil="true" />
+        <rwExp xsi:nil="true" />
+        <swProd>2782000</swProd>
+        <swImp xsi:nil="true" />
+        <swExp>209300</swExp>
+        <wbpProd xsi:nil="true" />
+        <wbpImp xsi:nil="true" />
+        <wbpExp xsi:nil="true" />
+        <ppProd xsi:nil="true" />
+        <ppImp xsi:nil="true" />
+        <ppExp xsi:nil="true" />
+        <wpImp xsi:nil="true" />
+        <wpExp xsi:nil="true" />
+        <irProd>1014000</irProd>
+        <irImp xsi:nil="true" />
+        <irExp xsi:nil="true" />
+        <oirProd xsi:nil="true" />
+        <oirImp xsi:nil="true" />
+        <oirExp xsi:nil="true" />
+        <chipsImp xsi:nil="true" />
+        <chipsExp xsi:nil="true" />
+        <charImp xsi:nil="true" />
+        <charExp xsi:nil="true" />
+        <resImp xsi:nil="true" />
+        <resExp xsi:nil="true" />
+        <documentation xsi:nil="true" />
+      </worksheet3D1DataYear>
+      <worksheet3D1DataYear>
+        <countryCode>BRM</countryCode>
+        <hwpYear>1981</hwpYear>
+        <rwProd xsi:nil="true" />
+        <rwImp xsi:nil="true" />
+        <rwExp xsi:nil="true" />
+        <swProd>2729000</swProd>
+        <swImp xsi:nil="true" />
+        <swExp>230800</swExp>
+        <wbpProd xsi:nil="true" />
+        <wbpImp xsi:nil="true" />
+        <wbpExp xsi:nil="true" />
+        <ppProd xsi:nil="true" />
+        <ppImp xsi:nil="true" />
+        <ppExp xsi:nil="true" />
+        <wpImp xsi:nil="true" />
+        <wpExp xsi:nil="true" />
+        <irProd>1036000</irProd>
+        <irImp xsi:nil="true" />
+        <irExp xsi:nil="true" />
+        <oirProd xsi:nil="true" />
+        <oirImp xsi:nil="true" />
+        <oirExp xsi:nil="true" />
+        <chipsImp xsi:nil="true" />
+        <chipsExp xsi:nil="true" />
+        <charImp xsi:nil="true" />
+        <charExp xsi:nil="true" />
+        <resImp xsi:nil="true" />
+        <resExp xsi:nil="true" />
+        <documentation xsi:nil="true" />
+      </worksheet3D1DataYear>
+      <worksheet3D1DataYear>
+        <countryCode>BRM</countryCode>
+        <hwpYear>1982</hwpYear>
+        <rwProd xsi:nil="true" />
+        <rwImp xsi:nil="true" />
+        <rwExp xsi:nil="true" />
+        <swProd>2775000</swProd>
+        <swImp xsi:nil="true" />
+        <swExp>205000</swExp>
+        <wbpProd xsi:nil="true" />
+        <wbpImp xsi:nil="true" />
+        <wbpExp xsi:nil="true" />
+        <ppProd xsi:nil="true" />
+        <ppImp xsi:nil="true" />
+        <ppExp xsi:nil="true" />
+        <wpImp xsi:nil="true" />
+        <wpExp xsi:nil="true" />
+        <irProd>1058000</irProd>
+        <irImp xsi:nil="true" />
+        <irExp xsi:nil="true" />
+        <oirProd xsi:nil="true" />
+        <oirImp xsi:nil="true" />
+        <oirExp xsi:nil="true" />
+        <chipsImp xsi:nil="true" />
+        <chipsExp xsi:nil="true" />
+        <charImp xsi:nil="true" />
+        <charExp xsi:nil="true" />
+        <resImp xsi:nil="true" />
+        <resExp xsi:nil="true" />
+        <documentation xsi:nil="true" />
+      </worksheet3D1DataYear>
+      <worksheet3D1DataYear>
+        <countryCode>BRM</countryCode>
+        <hwpYear>1983</hwpYear>
+        <rwProd xsi:nil="true" />
+        <rwImp xsi:nil="true" />
+        <rwExp xsi:nil="true" />
+        <swProd>2432000</swProd>
+        <swImp xsi:nil="true" />
+        <swExp>262400</swExp>
+        <wbpProd xsi:nil="true" />
+        <wbpImp xsi:nil="true" />
+        <wbpExp xsi:nil="true" />
+        <ppProd xsi:nil="true" />
+        <ppImp xsi:nil="true" />
+        <ppExp xsi:nil="true" />
+        <wpImp xsi:nil="true" />
+        <wpExp xsi:nil="true" />
+        <irProd>1080000</irProd>
+        <irImp xsi:nil="true" />
+        <irExp xsi:nil="true" />
+        <oirProd xsi:nil="true" />
+        <oirImp xsi:nil="true" />
+        <oirExp xsi:nil="true" />
+        <chipsImp xsi:nil="true" />
+        <chipsExp xsi:nil="true" />
+        <charImp xsi:nil="true" />
+        <charExp xsi:nil="true" />
+        <resImp xsi:nil="true" />
+        <resExp xsi:nil="true" />
+        <documentation xsi:nil="true" />
+      </worksheet3D1DataYear>
+      <worksheet3D1DataYear>
+        <countryCode>BRM</countryCode>
+        <hwpYear>1984</hwpYear>
+        <rwProd xsi:nil="true" />
+        <rwImp xsi:nil="true" />
+        <rwExp xsi:nil="true" />
+        <swProd>1774000</swProd>
+        <swImp xsi:nil="true" />
+        <swExp>268200</swExp>
+        <wbpProd xsi:nil="true" />
+        <wbpImp xsi:nil="true" />
+        <wbpExp xsi:nil="true" />
+        <ppProd xsi:nil="true" />
+        <ppImp xsi:nil="true" />
+        <ppExp xsi:nil="true" />
+        <wpImp xsi:nil="true" />
+        <wpExp xsi:nil="true" />
+        <irProd>1103000</irProd>
+        <irImp xsi:nil="true" />
+        <irExp xsi:nil="true" />
+        <oirProd xsi:nil="true" />
+        <oirImp xsi:nil="true" />
+        <oirExp xsi:nil="true" />
+        <chipsImp xsi:nil="true" />
+        <chipsExp xsi:nil="true" />
+        <charImp xsi:nil="true" />
+        <charExp xsi:nil="true" />
+        <resImp xsi:nil="true" />
+        <resExp xsi:nil="true" />
+        <documentation xsi:nil="true" />
+      </worksheet3D1DataYear>
+      <worksheet3D1DataYear>
+        <countryCode>BRM</countryCode>
+        <hwpYear>1985</hwpYear>
+        <rwProd>1363853.697602</rwProd>
+        <rwImp xsi:nil="true" />
+        <rwExp xsi:nil="true" />
+        <swProd>2070000</swProd>
+        <swImp xsi:nil="true" />
+        <swExp>259300</swExp>
+        <wbpProd xsi:nil="true" />
+        <wbpImp xsi:nil="true" />
+        <wbpExp xsi:nil="true" />
+        <ppProd xsi:nil="true" />
+        <ppImp xsi:nil="true" />
+        <ppExp xsi:nil="true" />
+        <wpImp xsi:nil="true" />
+        <wpExp xsi:nil="true" />
+        <irProd>1126000</irProd>
+        <irImp xsi:nil="true" />
+        <irExp xsi:nil="true" />
+        <oirProd xsi:nil="true" />
+        <oirImp xsi:nil="true" />
+        <oirExp xsi:nil="true" />
+        <chipsImp xsi:nil="true" />
+        <chipsExp xsi:nil="true" />
+        <charImp xsi:nil="true" />
+        <charExp xsi:nil="true" />
+        <resImp xsi:nil="true" />
+        <resExp xsi:nil="true" />
+        <documentation xsi:nil="true" />
+      </worksheet3D1DataYear>
+      <worksheet3D1DataYear>
+        <countryCode>BRM</countryCode>
+        <hwpYear>1986</hwpYear>
+        <rwProd>1363853.697602</rwProd>
+        <rwImp xsi:nil="true" />
+        <rwExp xsi:nil="true" />
+        <swProd>2027000</swProd>
+        <swImp xsi:nil="true" />
+        <swExp>255900</swExp>
+        <wbpProd xsi:nil="true" />
+        <wbpImp xsi:nil="true" />
+        <wbpExp xsi:nil="true" />
+        <ppProd xsi:nil="true" />
+        <ppImp xsi:nil="true" />
+        <ppExp xsi:nil="true" />
+        <wpImp xsi:nil="true" />
+        <wpExp xsi:nil="true" />
+        <irProd>1149000</irProd>
+        <irImp xsi:nil="true" />
+        <irExp xsi:nil="true" />
+        <oirProd xsi:nil="true" />
+        <oirImp xsi:nil="true" />
+        <oirExp xsi:nil="true" />
+        <chipsImp xsi:nil="true" />
+        <chipsExp xsi:nil="true" />
+        <charImp xsi:nil="true" />
+        <charExp xsi:nil="true" />
+        <resImp xsi:nil="true" />
+        <resExp xsi:nil="true" />
+        <documentation xsi:nil="true" />
+      </worksheet3D1DataYear>
+      <worksheet3D1DataYear>
+        <countryCode>BRM</countryCode>
+        <hwpYear>1987</hwpYear>
+        <rwProd>1363853.697602</rwProd>
+        <rwImp xsi:nil="true" />
+        <rwExp xsi:nil="true" />
+        <swProd>1883000</swProd>
+        <swImp xsi:nil="true" />
+        <swExp>418400</swExp>
+        <wbpProd xsi:nil="true" />
+        <wbpImp xsi:nil="true" />
+        <wbpExp xsi:nil="true" />
+        <ppProd xsi:nil="true" />
+        <ppImp xsi:nil="true" />
+        <ppExp xsi:nil="true" />
+        <wpImp xsi:nil="true" />
+        <wpExp xsi:nil="true" />
+        <irProd>1172000</irProd>
+        <irImp xsi:nil="true" />
+        <irExp xsi:nil="true" />
+        <oirProd xsi:nil="true" />
+        <oirImp xsi:nil="true" />
+        <oirExp xsi:nil="true" />
+        <chipsImp xsi:nil="true" />
+        <chipsExp xsi:nil="true" />
+        <charImp xsi:nil="true" />
+        <charExp xsi:nil="true" />
+        <resImp xsi:nil="true" />
+        <resExp xsi:nil="true" />
+        <documentation xsi:nil="true" />
+      </worksheet3D1DataYear>
+      <worksheet3D1DataYear>
+        <countryCode>BRM</countryCode>
+        <hwpYear>1988</hwpYear>
+        <rwProd>1363853.697602</rwProd>
+        <rwImp xsi:nil="true" />
+        <rwExp xsi:nil="true" />
+        <swProd>1762000</swProd>
+        <swImp xsi:nil="true" />
+        <swExp>473200</swExp>
+        <wbpProd xsi:nil="true" />
+        <wbpImp xsi:nil="true" />
+        <wbpExp xsi:nil="true" />
+        <ppProd xsi:nil="true" />
+        <ppImp xsi:nil="true" />
+        <ppExp xsi:nil="true" />
+        <wpImp xsi:nil="true" />
+        <wpExp xsi:nil="true" />
+        <irProd>1195000</irProd>
+        <irImp xsi:nil="true" />
+        <irExp xsi:nil="true" />
+        <oirProd xsi:nil="true" />
+        <oirImp xsi:nil="true" />
+        <oirExp xsi:nil="true" />
+        <chipsImp xsi:nil="true" />
+        <chipsExp xsi:nil="true" />
+        <charImp xsi:nil="true" />
+        <charExp xsi:nil="true" />
+        <resImp xsi:nil="true" />
+        <resExp xsi:nil="true" />
+        <documentation xsi:nil="true" />
+      </worksheet3D1DataYear>
+      <worksheet3D1DataYear>
+        <countryCode>BRM</countryCode>
+        <hwpYear>1989</hwpYear>
+        <rwProd>1363853.697602</rwProd>
+        <rwImp xsi:nil="true" />
+        <rwExp xsi:nil="true" />
+        <swProd>1859000</swProd>
+        <swImp xsi:nil="true" />
+        <swExp>603100</swExp>
+        <wbpProd xsi:nil="true" />
+        <wbpImp xsi:nil="true" />
+        <wbpExp xsi:nil="true" />
+        <ppProd xsi:nil="true" />
+        <ppImp xsi:nil="true" />
+        <ppExp xsi:nil="true" />
+        <wpImp xsi:nil="true" />
+        <wpExp xsi:nil="true" />
+        <irProd>1218000</irProd>
+        <irImp xsi:nil="true" />
+        <irExp xsi:nil="true" />
+        <oirProd xsi:nil="true" />
+        <oirImp xsi:nil="true" />
+        <oirExp xsi:nil="true" />
+        <chipsImp xsi:nil="true" />
+        <chipsExp xsi:nil="true" />
+        <charImp xsi:nil="true" />
+        <charExp xsi:nil="true" />
+        <resImp xsi:nil="true" />
+        <resExp xsi:nil="true" />
+        <documentation xsi:nil="true" />
+      </worksheet3D1DataYear>
+      <worksheet3D1DataYear>
+        <countryCode>BRM</countryCode>
+        <hwpYear>1990</hwpYear>
+        <rwProd>1490008.051486</rwProd>
+        <rwImp xsi:nil="true" />
+        <rwExp xsi:nil="true" />
+        <swProd>2413000</swProd>
+        <swImp xsi:nil="true" />
+        <swExp xsi:nil="true" />
+        <wbpProd xsi:nil="true" />
+        <wbpImp xsi:nil="true" />
+        <wbpExp xsi:nil="true" />
+        <ppProd xsi:nil="true" />
+        <ppImp xsi:nil="true" />
+        <ppExp xsi:nil="true" />
+        <wpImp xsi:nil="true" />
+        <wpExp xsi:nil="true" />
+        <irProd>1240000</irProd>
+        <irImp xsi:nil="true" />
+        <irExp xsi:nil="true" />
+        <oirProd xsi:nil="true" />
+        <oirImp xsi:nil="true" />
+        <oirExp xsi:nil="true" />
+        <chipsImp xsi:nil="true" />
+        <chipsExp xsi:nil="true" />
+        <charImp xsi:nil="true" />
+        <charExp xsi:nil="true" />
+        <resImp xsi:nil="true" />
+        <resExp xsi:nil="true" />
+        <documentation xsi:nil="true" />
+      </worksheet3D1DataYear>
+      <worksheet3D1DataYear>
+        <countryCode>BRM</countryCode>
+        <hwpYear>1991</hwpYear>
+        <rwProd>1490008.051486</rwProd>
+        <rwImp xsi:nil="true" />
+        <rwExp xsi:nil="true" />
+        <swProd>2783000</swProd>
+        <swImp xsi:nil="true" />
+        <swExp xsi:nil="true" />
+        <wbpProd xsi:nil="true" />
+        <wbpImp xsi:nil="true" />
+        <wbpExp xsi:nil="true" />
+        <ppProd xsi:nil="true" />
+        <ppImp xsi:nil="true" />
+        <ppExp xsi:nil="true" />
+        <wpImp xsi:nil="true" />
+        <wpExp xsi:nil="true" />
+        <irProd>1230000</irProd>
+        <irImp xsi:nil="true" />
+        <irExp xsi:nil="true" />
+        <oirProd xsi:nil="true" />
+        <oirImp xsi:nil="true" />
+        <oirExp xsi:nil="true" />
+        <chipsImp xsi:nil="true" />
+        <chipsExp xsi:nil="true" />
+        <charImp xsi:nil="true" />
+        <charExp xsi:nil="true" />
+        <resImp xsi:nil="true" />
+        <resExp xsi:nil="true" />
+        <documentation xsi:nil="true" />
+      </worksheet3D1DataYear>
+      <worksheet3D1DataYear>
+        <countryCode>BRM</countryCode>
+        <hwpYear>1992</hwpYear>
+        <rwProd>1490008.051486</rwProd>
+        <rwImp xsi:nil="true" />
+        <rwExp xsi:nil="true" />
+        <swProd>2791000</swProd>
+        <swImp xsi:nil="true" />
+        <swExp xsi:nil="true" />
+        <wbpProd xsi:nil="true" />
+        <wbpImp xsi:nil="true" />
+        <wbpExp xsi:nil="true" />
+        <ppProd xsi:nil="true" />
+        <ppImp xsi:nil="true" />
+        <ppExp xsi:nil="true" />
+        <wpImp xsi:nil="true" />
+        <wpExp xsi:nil="true" />
+        <irProd>1244000</irProd>
+        <irImp xsi:nil="true" />
+        <irExp xsi:nil="true" />
+        <oirProd xsi:nil="true" />
+        <oirImp xsi:nil="true" />
+        <oirExp xsi:nil="true" />
+        <chipsImp xsi:nil="true" />
+        <chipsExp xsi:nil="true" />
+        <charImp xsi:nil="true" />
+        <charExp>16800</charExp>
+        <resImp xsi:nil="true" />
+        <resExp xsi:nil="true" />
+        <documentation xsi:nil="true" />
+      </worksheet3D1DataYear>
+      <worksheet3D1DataYear>
+        <countryCode>BRM</countryCode>
+        <hwpYear>1993</hwpYear>
+        <rwProd>1490008.051486</rwProd>
+        <rwImp xsi:nil="true" />
+        <rwExp xsi:nil="true" />
+        <swProd>2004000</swProd>
+        <swImp xsi:nil="true" />
+        <swExp xsi:nil="true" />
+        <wbpProd xsi:nil="true" />
+        <wbpImp xsi:nil="true" />
+        <wbpExp xsi:nil="true" />
+        <ppProd xsi:nil="true" />
+        <ppImp xsi:nil="true" />
+        <ppExp xsi:nil="true" />
+        <wpImp xsi:nil="true" />
+        <wpExp xsi:nil="true" />
+        <irProd>1257000</irProd>
+        <irImp xsi:nil="true" />
+        <irExp xsi:nil="true" />
+        <oirProd xsi:nil="true" />
+        <oirImp xsi:nil="true" />
+        <oirExp xsi:nil="true" />
+        <chipsImp xsi:nil="true" />
+        <chipsExp xsi:nil="true" />
+        <charImp xsi:nil="true" />
+        <charExp>18100</charExp>
+        <resImp xsi:nil="true" />
+        <resExp xsi:nil="true" />
+        <documentation xsi:nil="true" />
+      </worksheet3D1DataYear>
+      <worksheet3D1DataYear>
+        <countryCode>BRM</countryCode>
+        <hwpYear>1994</hwpYear>
+        <rwProd>1490008.051486</rwProd>
+        <rwImp xsi:nil="true" />
+        <rwExp xsi:nil="true" />
+        <swProd>1388000</swProd>
+        <swImp xsi:nil="true" />
+        <swExp xsi:nil="true" />
+        <wbpProd xsi:nil="true" />
+        <wbpImp xsi:nil="true" />
+        <wbpExp xsi:nil="true" />
+        <ppProd xsi:nil="true" />
+        <ppImp xsi:nil="true" />
+        <ppExp xsi:nil="true" />
+        <wpImp xsi:nil="true" />
+        <wpExp xsi:nil="true" />
+        <irProd>1271000</irProd>
+        <irImp xsi:nil="true" />
+        <irExp xsi:nil="true" />
+        <oirProd xsi:nil="true" />
+        <oirImp xsi:nil="true" />
+        <oirExp xsi:nil="true" />
+        <chipsImp xsi:nil="true" />
+        <chipsExp xsi:nil="true" />
+        <charImp xsi:nil="true" />
+        <charExp>18100</charExp>
+        <resImp xsi:nil="true" />
+        <resExp xsi:nil="true" />
+        <documentation xsi:nil="true" />
+      </worksheet3D1DataYear>
+      <worksheet3D1DataYear>
+        <countryCode>BRM</countryCode>
+        <hwpYear>1995</hwpYear>
+        <rwProd>1257195.488058</rwProd>
+        <rwImp xsi:nil="true" />
+        <rwExp xsi:nil="true" />
+        <swProd>1523000</swProd>
+        <swImp xsi:nil="true" />
+        <swExp xsi:nil="true" />
+        <wbpProd xsi:nil="true" />
+        <wbpImp xsi:nil="true" />
+        <wbpExp xsi:nil="true" />
+        <ppProd xsi:nil="true" />
+        <ppImp xsi:nil="true" />
+        <ppExp xsi:nil="true" />
+        <wpImp xsi:nil="true" />
+        <wpExp xsi:nil="true" />
+        <irProd>1286000</irProd>
+        <irImp xsi:nil="true" />
+        <irExp xsi:nil="true" />
+        <oirProd xsi:nil="true" />
+        <oirImp xsi:nil="true" />
+        <oirExp xsi:nil="true" />
+        <chipsImp xsi:nil="true" />
+        <chipsExp xsi:nil="true" />
+        <charImp xsi:nil="true" />
+        <charExp>9500</charExp>
+        <resImp xsi:nil="true" />
+        <resExp xsi:nil="true" />
+        <documentation xsi:nil="true" />
+      </worksheet3D1DataYear>
+      <worksheet3D1DataYear>
+        <countryCode>BRM</countryCode>
+        <hwpYear>1996</hwpYear>
+        <rwProd>1257195.488058</rwProd>
+        <rwImp xsi:nil="true" />
+        <rwExp xsi:nil="true" />
+        <swProd>1686000</swProd>
+        <swImp xsi:nil="true" />
+        <swExp xsi:nil="true" />
+        <wbpProd xsi:nil="true" />
+        <wbpImp xsi:nil="true" />
+        <wbpExp xsi:nil="true" />
+        <ppProd xsi:nil="true" />
+        <ppImp xsi:nil="true" />
+        <ppExp xsi:nil="true" />
+        <wpImp xsi:nil="true" />
+        <wpExp xsi:nil="true" />
+        <irProd>1301000</irProd>
+        <irImp xsi:nil="true" />
+        <irExp xsi:nil="true" />
+        <oirProd xsi:nil="true" />
+        <oirImp xsi:nil="true" />
+        <oirExp xsi:nil="true" />
+        <chipsImp xsi:nil="true" />
+        <chipsExp xsi:nil="true" />
+        <charImp xsi:nil="true" />
+        <charExp>9800</charExp>
+        <resImp xsi:nil="true" />
+        <resExp xsi:nil="true" />
+        <documentation xsi:nil="true" />
+      </worksheet3D1DataYear>
+      <worksheet3D1DataYear>
+        <countryCode>BRM</countryCode>
+        <hwpYear>1997</hwpYear>
+        <rwProd>1257195.488058</rwProd>
+        <rwImp xsi:nil="true" />
+        <rwExp xsi:nil="true" />
+        <swProd>1989000</swProd>
+        <swImp xsi:nil="true" />
+        <swExp xsi:nil="true" />
+        <wbpProd xsi:nil="true" />
+        <wbpImp xsi:nil="true" />
+        <wbpExp xsi:nil="true" />
+        <ppProd xsi:nil="true" />
+        <ppImp xsi:nil="true" />
+        <ppExp xsi:nil="true" />
+        <wpImp xsi:nil="true" />
+        <wpExp xsi:nil="true" />
+        <irProd>1318000</irProd>
+        <irImp xsi:nil="true" />
+        <irExp xsi:nil="true" />
+        <oirProd xsi:nil="true" />
+        <oirImp xsi:nil="true" />
+        <oirExp xsi:nil="true" />
+        <chipsImp xsi:nil="true" />
+        <chipsExp xsi:nil="true" />
+        <charImp xsi:nil="true" />
+        <charExp>11300</charExp>
+        <resImp xsi:nil="true" />
+        <resExp xsi:nil="true" />
+        <documentation xsi:nil="true" />
+      </worksheet3D1DataYear>
+      <worksheet3D1DataYear>
+        <countryCode>BRM</countryCode>
+        <hwpYear>1998</hwpYear>
+        <rwProd>1257195.488058</rwProd>
+        <rwImp xsi:nil="true" />
+        <rwExp xsi:nil="true" />
+        <swProd>2110000</swProd>
+        <swImp xsi:nil="true" />
+        <swExp xsi:nil="true" />
+        <wbpProd xsi:nil="true" />
+        <wbpImp xsi:nil="true" />
+        <wbpExp xsi:nil="true" />
+        <ppProd xsi:nil="true" />
+        <ppImp xsi:nil="true" />
+        <ppExp xsi:nil="true" />
+        <wpImp xsi:nil="true" />
+        <wpExp xsi:nil="true" />
+        <irProd>0</irProd>
+        <irImp xsi:nil="true" />
+        <irExp xsi:nil="true" />
+        <oirProd xsi:nil="true" />
+        <oirImp xsi:nil="true" />
+        <oirExp xsi:nil="true" />
+        <chipsImp xsi:nil="true" />
+        <chipsExp xsi:nil="true" />
+        <charImp xsi:nil="true" />
+        <charExp>11300</charExp>
+        <resImp xsi:nil="true" />
+        <resExp xsi:nil="true" />
+        <documentation xsi:nil="true" />
+      </worksheet3D1DataYear>
+      <worksheet3D1DataYear>
+        <countryCode>BRM</countryCode>
+        <hwpYear>1999</hwpYear>
+        <rwProd>1573857.04641</rwProd>
+        <rwImp xsi:nil="true" />
+        <rwExp xsi:nil="true" />
+        <swProd>2085000</swProd>
+        <swImp xsi:nil="true" />
+        <swExp xsi:nil="true" />
+        <wbpProd xsi:nil="true" />
+        <wbpImp xsi:nil="true" />
+        <wbpExp xsi:nil="true" />
+        <ppProd xsi:nil="true" />
+        <ppImp xsi:nil="true" />
+        <ppExp xsi:nil="true" />
+        <wpImp xsi:nil="true" />
+        <wpExp xsi:nil="true" />
+        <irProd>1263000</irProd>
+        <irImp xsi:nil="true" />
+        <irExp xsi:nil="true" />
+        <oirProd xsi:nil="true" />
+        <oirImp xsi:nil="true" />
+        <oirExp xsi:nil="true" />
+        <chipsImp xsi:nil="true" />
+        <chipsExp xsi:nil="true" />
+        <charImp xsi:nil="true" />
+        <charExp>13400</charExp>
+        <resImp xsi:nil="true" />
+        <resExp xsi:nil="true" />
+        <documentation xsi:nil="true" />
+      </worksheet3D1DataYear>
+      <worksheet3D1DataYear>
+        <countryCode>BRM</countryCode>
+        <hwpYear>2000</hwpYear>
+        <rwProd>1700567.8262</rwProd>
+        <rwImp xsi:nil="true" />
+        <rwExp xsi:nil="true" />
+        <swProd>2337000</swProd>
+        <swImp xsi:nil="true" />
+        <swExp xsi:nil="true" />
+        <wbpProd xsi:nil="true" />
+        <wbpImp xsi:nil="true" />
+        <wbpExp xsi:nil="true" />
+        <ppProd xsi:nil="true" />
+        <ppImp xsi:nil="true" />
+        <ppExp xsi:nil="true" />
+        <wpImp xsi:nil="true" />
+        <wpExp xsi:nil="true" />
+        <irProd>1275000</irProd>
+        <irImp xsi:nil="true" />
+        <irExp xsi:nil="true" />
+        <oirProd xsi:nil="true" />
+        <oirImp xsi:nil="true" />
+        <oirExp xsi:nil="true" />
+        <chipsImp xsi:nil="true" />
+        <chipsExp xsi:nil="true" />
+        <charImp xsi:nil="true" />
+        <charExp>21700</charExp>
+        <resImp xsi:nil="true" />
+        <resExp xsi:nil="true" />
+        <documentation xsi:nil="true" />
+      </worksheet3D1DataYear>
+      <worksheet3D1DataYear>
+        <countryCode>BRM</countryCode>
+        <hwpYear>2001</hwpYear>
+        <rwProd>1999010.329696</rwProd>
+        <rwImp xsi:nil="true" />
+        <rwExp xsi:nil="true" />
+        <swProd>2662000</swProd>
+        <swImp xsi:nil="true" />
+        <swExp xsi:nil="true" />
+        <wbpProd xsi:nil="true" />
+        <wbpImp xsi:nil="true" />
+        <wbpExp xsi:nil="true" />
+        <ppProd xsi:nil="true" />
+        <ppImp xsi:nil="true" />
+        <ppExp xsi:nil="true" />
+        <wpImp xsi:nil="true" />
+        <wpExp xsi:nil="true" />
+        <irProd>1300000</irProd>
+        <irImp xsi:nil="true" />
+        <irExp xsi:nil="true" />
+        <oirProd xsi:nil="true" />
+        <oirImp xsi:nil="true" />
+        <oirExp xsi:nil="true" />
+        <chipsImp xsi:nil="true" />
+        <chipsExp xsi:nil="true" />
+        <charImp xsi:nil="true" />
+        <charExp>15000</charExp>
+        <resImp xsi:nil="true" />
+        <resExp xsi:nil="true" />
+        <documentation xsi:nil="true" />
+      </worksheet3D1DataYear>
+      <worksheet3D1DataYear>
+        <countryCode>BRM</countryCode>
+        <hwpYear>2002</hwpYear>
+        <rwProd>1940713.035346</rwProd>
+        <rwImp xsi:nil="true" />
+        <rwExp xsi:nil="true" />
+        <swProd>2612500</swProd>
+        <swImp xsi:nil="true" />
+        <swExp xsi:nil="true" />
+        <wbpProd xsi:nil="true" />
+        <wbpImp xsi:nil="true" />
+        <wbpExp xsi:nil="true" />
+        <ppProd xsi:nil="true" />
+        <ppImp xsi:nil="true" />
+        <ppExp xsi:nil="true" />
+        <wpImp xsi:nil="true" />
+        <wpExp xsi:nil="true" />
+        <irProd>1326400</irProd>
+        <irImp xsi:nil="true" />
+        <irExp xsi:nil="true" />
+        <oirProd xsi:nil="true" />
+        <oirImp xsi:nil="true" />
+        <oirExp xsi:nil="true" />
+        <chipsImp xsi:nil="true" />
+        <chipsExp xsi:nil="true" />
+        <charImp xsi:nil="true" />
+        <charExp>15000</charExp>
+        <resImp xsi:nil="true" />
+        <resExp xsi:nil="true" />
+        <documentation xsi:nil="true" />
+      </worksheet3D1DataYear>
+      <worksheet3D1DataYear>
+        <countryCode>BRM</countryCode>
+        <hwpYear>2003</hwpYear>
+        <rwProd>2108048.569642</rwProd>
+        <rwImp xsi:nil="true" />
+        <rwExp xsi:nil="true" />
+        <swProd>2884700</swProd>
+        <swImp xsi:nil="true" />
+        <swExp xsi:nil="true" />
+        <wbpProd xsi:nil="true" />
+        <wbpImp xsi:nil="true" />
+        <wbpExp xsi:nil="true" />
+        <ppProd xsi:nil="true" />
+        <ppImp xsi:nil="true" />
+        <ppExp xsi:nil="true" />
+        <wpImp xsi:nil="true" />
+        <wpExp xsi:nil="true" />
+        <irProd>1352900</irProd>
+        <irImp xsi:nil="true" />
+        <irExp xsi:nil="true" />
+        <oirProd xsi:nil="true" />
+        <oirImp xsi:nil="true" />
+        <oirExp xsi:nil="true" />
+        <chipsImp xsi:nil="true" />
+        <chipsExp xsi:nil="true" />
+        <charImp xsi:nil="true" />
+        <charExp>27300</charExp>
+        <resImp xsi:nil="true" />
+        <resExp xsi:nil="true" />
+        <documentation xsi:nil="true" />
+      </worksheet3D1DataYear>
+      <worksheet3D1DataYear>
+        <countryCode>BRM</countryCode>
+        <hwpYear>2004</hwpYear>
+        <rwProd>2052083.167066</rwProd>
+        <rwImp xsi:nil="true" />
+        <rwExp xsi:nil="true" />
+        <swProd>2815900</swProd>
+        <swImp xsi:nil="true" />
+        <swExp xsi:nil="true" />
+        <wbpProd xsi:nil="true" />
+        <wbpImp xsi:nil="true" />
+        <wbpExp xsi:nil="true" />
+        <ppProd xsi:nil="true" />
+        <ppImp xsi:nil="true" />
+        <ppExp xsi:nil="true" />
+        <wpImp xsi:nil="true" />
+        <wpExp xsi:nil="true" />
+        <irProd>1380000</irProd>
+        <irImp xsi:nil="true" />
+        <irExp xsi:nil="true" />
+        <oirProd xsi:nil="true" />
+        <oirImp xsi:nil="true" />
+        <oirExp xsi:nil="true" />
+        <chipsImp xsi:nil="true" />
+        <chipsExp xsi:nil="true" />
+        <charImp xsi:nil="true" />
+        <charExp>39434</charExp>
+        <resImp xsi:nil="true" />
+        <resExp xsi:nil="true" />
+        <documentation xsi:nil="true" />
+      </worksheet3D1DataYear>
+      <worksheet3D1DataYear>
+        <countryCode>BRM</countryCode>
+        <hwpYear>2005</hwpYear>
+        <rwProd>2101194.47852</rwProd>
+        <rwImp xsi:nil="true" />
+        <rwExp xsi:nil="true" />
+        <swProd>2849000</swProd>
+        <swImp xsi:nil="true" />
+        <swExp xsi:nil="true" />
+        <wbpProd xsi:nil="true" />
+        <wbpImp xsi:nil="true" />
+        <wbpExp xsi:nil="true" />
+        <ppProd xsi:nil="true" />
+        <ppImp xsi:nil="true" />
+        <ppExp xsi:nil="true" />
+        <wpImp xsi:nil="true" />
+        <wpExp xsi:nil="true" />
+        <irProd>1413000</irProd>
+        <irImp xsi:nil="true" />
+        <irExp xsi:nil="true" />
+        <oirProd xsi:nil="true" />
+        <oirImp xsi:nil="true" />
+        <oirExp xsi:nil="true" />
+        <chipsImp xsi:nil="true" />
+        <chipsExp xsi:nil="true" />
+        <charImp xsi:nil="true" />
+        <charExp>45304</charExp>
+        <resImp xsi:nil="true" />
+        <resExp xsi:nil="true" />
+        <documentation xsi:nil="true" />
+      </worksheet3D1DataYear>
+      <worksheet3D1DataYear>
+        <countryCode>BRM</countryCode>
+        <hwpYear>2006</hwpYear>
+        <rwProd>2181111.68021</rwProd>
+        <rwImp xsi:nil="true" />
+        <rwExp xsi:nil="true" />
+        <swProd>2849000</swProd>
+        <swImp xsi:nil="true" />
+        <swExp xsi:nil="true" />
+        <wbpProd xsi:nil="true" />
+        <wbpImp xsi:nil="true" />
+        <wbpExp xsi:nil="true" />
+        <ppProd xsi:nil="true" />
+        <ppImp xsi:nil="true" />
+        <ppExp xsi:nil="true" />
+        <wpImp xsi:nil="true" />
+        <wpExp xsi:nil="true" />
+        <irProd>1413000</irProd>
+        <irImp xsi:nil="true" />
+        <irExp xsi:nil="true" />
+        <oirProd xsi:nil="true" />
+        <oirImp xsi:nil="true" />
+        <oirExp xsi:nil="true" />
+        <chipsImp xsi:nil="true" />
+        <chipsExp xsi:nil="true" />
+        <charImp xsi:nil="true" />
+        <charExp>47361</charExp>
+        <resImp xsi:nil="true" />
+        <resExp xsi:nil="true" />
+        <documentation xsi:nil="true" />
+      </worksheet3D1DataYear>
+      <worksheet3D1DataYear>
+        <countryCode>BRM</countryCode>
+        <hwpYear>2007</hwpYear>
+        <rwProd>2283552.096436</rwProd>
+        <rwImp xsi:nil="true" />
+        <rwExp xsi:nil="true" />
+        <swProd>2849000</swProd>
+        <swImp xsi:nil="true" />
+        <swExp xsi:nil="true" />
+        <wbpProd xsi:nil="true" />
+        <wbpImp xsi:nil="true" />
+        <wbpExp xsi:nil="true" />
+        <ppProd xsi:nil="true" />
+        <ppImp xsi:nil="true" />
+        <ppExp xsi:nil="true" />
+        <wpImp xsi:nil="true" />
+        <wpExp xsi:nil="true" />
+        <irProd>1413000</irProd>
+        <irImp xsi:nil="true" />
+        <irExp xsi:nil="true" />
+        <oirProd xsi:nil="true" />
+        <oirImp xsi:nil="true" />
+        <oirExp xsi:nil="true" />
+        <chipsImp xsi:nil="true" />
+        <chipsExp xsi:nil="true" />
+        <charImp xsi:nil="true" />
+        <charExp>67392</charExp>
+        <resImp xsi:nil="true" />
+        <resExp xsi:nil="true" />
+        <documentation xsi:nil="true" />
+      </worksheet3D1DataYear>
+      <worksheet3D1DataYear>
+        <countryCode>BRM</countryCode>
+        <hwpYear>2008</hwpYear>
+        <rwProd>2214391.04652</rwProd>
+        <rwImp xsi:nil="true" />
+        <rwExp xsi:nil="true" />
+        <swProd>2849000</swProd>
+        <swImp xsi:nil="true" />
+        <swExp xsi:nil="true" />
+        <wbpProd xsi:nil="true" />
+        <wbpImp xsi:nil="true" />
+        <wbpExp xsi:nil="true" />
+        <ppProd xsi:nil="true" />
+        <ppImp xsi:nil="true" />
+        <ppExp xsi:nil="true" />
+        <wpImp xsi:nil="true" />
+        <wpExp xsi:nil="true" />
+        <irProd>1413000</irProd>
+        <irImp xsi:nil="true" />
+        <irExp xsi:nil="true" />
+        <oirProd xsi:nil="true" />
+        <oirImp xsi:nil="true" />
+        <oirExp xsi:nil="true" />
+        <chipsImp xsi:nil="true" />
+        <chipsExp xsi:nil="true" />
+        <charImp xsi:nil="true" />
+        <charExp>150414</charExp>
+        <resImp xsi:nil="true" />
+        <resExp xsi:nil="true" />
+        <documentation xsi:nil="true" />
+      </worksheet3D1DataYear>
+      <worksheet3D1DataYear>
+        <countryCode>BRM</countryCode>
+        <hwpYear>2009</hwpYear>
+        <rwProd>2334678.151056</rwProd>
+        <rwImp xsi:nil="true" />
+        <rwExp xsi:nil="true" />
+        <swProd>2849000</swProd>
+        <swImp xsi:nil="true" />
+        <swExp xsi:nil="true" />
+        <wbpProd xsi:nil="true" />
+        <wbpImp xsi:nil="true" />
+        <wbpExp xsi:nil="true" />
+        <ppProd xsi:nil="true" />
+        <ppImp xsi:nil="true" />
+        <ppExp xsi:nil="true" />
+        <wpImp xsi:nil="true" />
+        <wpExp xsi:nil="true" />
+        <irProd>1413000</irProd>
+        <irImp xsi:nil="true" />
+        <irExp xsi:nil="true" />
+        <oirProd xsi:nil="true" />
+        <oirImp xsi:nil="true" />
+        <oirExp xsi:nil="true" />
+        <chipsImp xsi:nil="true" />
+        <chipsExp xsi:nil="true" />
+        <charImp xsi:nil="true" />
+        <charExp>169419</charExp>
+        <resImp xsi:nil="true" />
+        <resExp xsi:nil="true" />
+        <documentation xsi:nil="true" />
+      </worksheet3D1DataYear>
+      <worksheet3D1DataYear>
+        <countryCode>BRM</countryCode>
+        <hwpYear>2010</hwpYear>
+        <rwProd>2166807.428484</rwProd>
+        <rwImp xsi:nil="true" />
+        <rwExp xsi:nil="true" />
+        <swProd>2758000</swProd>
+        <swImp xsi:nil="true" />
+        <swExp xsi:nil="true" />
+        <wbpProd xsi:nil="true" />
+        <wbpImp xsi:nil="true" />
+        <wbpExp xsi:nil="true" />
+        <ppProd xsi:nil="true" />
+        <ppImp xsi:nil="true" />
+        <ppExp xsi:nil="true" />
+        <wpImp xsi:nil="true" />
+        <wpExp xsi:nil="true" />
+        <irProd>1413000</irProd>
+        <irImp xsi:nil="true" />
+        <irExp xsi:nil="true" />
+        <oirProd xsi:nil="true" />
+        <oirImp xsi:nil="true" />
+        <oirExp xsi:nil="true" />
+        <chipsImp xsi:nil="true" />
+        <chipsExp xsi:nil="true" />
+        <charImp xsi:nil="true" />
+        <charExp>183537</charExp>
+        <resImp xsi:nil="true" />
+        <resExp xsi:nil="true" />
+        <documentation xsi:nil="true" />
+      </worksheet3D1DataYear>
+      <worksheet3D1DataYear>
+        <countryCode>BRM</countryCode>
+        <hwpYear>2011</hwpYear>
+        <rwProd>2396182.327536</rwProd>
+        <rwImp xsi:nil="true" />
+        <rwExp xsi:nil="true" />
+        <swProd>3134000</swProd>
+        <swImp xsi:nil="true" />
+        <swExp xsi:nil="true" />
+        <wbpProd xsi:nil="true" />
+        <wbpImp xsi:nil="true" />
+        <wbpExp xsi:nil="true" />
+        <ppProd xsi:nil="true" />
+        <ppImp xsi:nil="true" />
+        <ppExp xsi:nil="true" />
+        <wpImp xsi:nil="true" />
+        <wpExp xsi:nil="true" />
+        <irProd>1605000</irProd>
+        <irImp xsi:nil="true" />
+        <irExp xsi:nil="true" />
+        <oirProd xsi:nil="true" />
+        <oirImp xsi:nil="true" />
+        <oirExp xsi:nil="true" />
+        <chipsImp xsi:nil="true" />
+        <chipsExp xsi:nil="true" />
+        <charImp xsi:nil="true" />
+        <charExp>196373</charExp>
+        <resImp xsi:nil="true" />
+        <resExp xsi:nil="true" />
+        <documentation xsi:nil="true" />
+      </worksheet3D1DataYear>
+      <worksheet3D1DataYear>
+        <countryCode>BRM</countryCode>
+        <hwpYear>2012</hwpYear>
+        <rwProd>2630899.198454</rwProd>
+        <rwImp xsi:nil="true" />
+        <rwExp xsi:nil="true" />
+        <swProd>3349000</swProd>
+        <swImp xsi:nil="true" />
+        <swExp xsi:nil="true" />
+        <wbpProd xsi:nil="true" />
+        <wbpImp xsi:nil="true" />
+        <wbpExp xsi:nil="true" />
+        <ppProd xsi:nil="true" />
+        <ppImp xsi:nil="true" />
+        <ppExp xsi:nil="true" />
+        <wpImp xsi:nil="true" />
+        <wpExp xsi:nil="true" />
+        <irProd>1638000</irProd>
+        <irImp xsi:nil="true" />
+        <irExp xsi:nil="true" />
+        <oirProd xsi:nil="true" />
+        <oirImp xsi:nil="true" />
+        <oirExp xsi:nil="true" />
+        <chipsImp xsi:nil="true" />
+        <chipsExp xsi:nil="true" />
+        <charImp xsi:nil="true" />
+        <charExp>159590</charExp>
+        <resImp xsi:nil="true" />
+        <resExp xsi:nil="true" />
+        <documentation xsi:nil="true" />
+      </worksheet3D1DataYear>
+      <worksheet3D1DataYear>
+        <countryCode>BRM</countryCode>
+        <hwpYear>2013</hwpYear>
+        <rwProd>2284799.453238</rwProd>
+        <rwImp xsi:nil="true" />
+        <rwExp xsi:nil="true" />
+        <swProd>2909000</swProd>
+        <swImp xsi:nil="true" />
+        <swExp xsi:nil="true" />
+        <wbpProd xsi:nil="true" />
+        <wbpImp xsi:nil="true" />
+        <wbpExp xsi:nil="true" />
+        <ppProd xsi:nil="true" />
+        <ppImp xsi:nil="true" />
+        <ppExp xsi:nil="true" />
+        <wpImp xsi:nil="true" />
+        <wpExp xsi:nil="true" />
+        <irProd>1638000</irProd>
+        <irImp xsi:nil="true" />
+        <irExp xsi:nil="true" />
+        <oirProd xsi:nil="true" />
+        <oirImp xsi:nil="true" />
+        <oirExp xsi:nil="true" />
+        <chipsImp xsi:nil="true" />
+        <chipsExp xsi:nil="true" />
+        <charImp xsi:nil="true" />
+        <charExp>184633</charExp>
+        <resImp xsi:nil="true" />
+        <resExp xsi:nil="true" />
+        <documentation xsi:nil="true" />
+      </worksheet3D1DataYear>
+      <worksheet3D1DataYear>
+        <countryCode>BRM</countryCode>
+        <hwpYear>2014</hwpYear>
+        <rwProd>1050196.555974</rwProd>
+        <rwImp xsi:nil="true" />
+        <rwExp xsi:nil="true" />
+        <swProd>4200000</swProd>
+        <swImp xsi:nil="true" />
+        <swExp xsi:nil="true" />
+        <wbpProd xsi:nil="true" />
+        <wbpImp xsi:nil="true" />
+        <wbpExp xsi:nil="true" />
+        <ppProd xsi:nil="true" />
+        <ppImp xsi:nil="true" />
+        <ppExp xsi:nil="true" />
+        <wpImp xsi:nil="true" />
+        <wpExp xsi:nil="true" />
+        <irProd>1800000</irProd>
+        <irImp xsi:nil="true" />
+        <irExp xsi:nil="true" />
+        <oirProd xsi:nil="true" />
+        <oirImp xsi:nil="true" />
+        <oirExp xsi:nil="true" />
+        <chipsImp xsi:nil="true" />
+        <chipsExp xsi:nil="true" />
+        <charImp xsi:nil="true" />
+        <charExp>179365</charExp>
+        <resImp xsi:nil="true" />
+        <resExp xsi:nil="true" />
+        <documentation xsi:nil="true" />
+      </worksheet3D1DataYear>
+      <worksheet3D1DataYear>
+        <countryCode>BRM</countryCode>
+        <hwpYear>2015</hwpYear>
+        <rwProd>979856.109572</rwProd>
+        <rwImp xsi:nil="true" />
+        <rwExp xsi:nil="true" />
+        <swProd>4200000</swProd>
+        <swImp xsi:nil="true" />
+        <swExp xsi:nil="true" />
+        <wbpProd xsi:nil="true" />
+        <wbpImp xsi:nil="true" />
+        <wbpExp xsi:nil="true" />
+        <ppProd xsi:nil="true" />
+        <ppImp xsi:nil="true" />
+        <ppExp xsi:nil="true" />
+        <wpImp xsi:nil="true" />
+        <wpExp xsi:nil="true" />
+        <irProd>1800000</irProd>
+        <irImp xsi:nil="true" />
+        <irExp xsi:nil="true" />
+        <oirProd xsi:nil="true" />
+        <oirImp xsi:nil="true" />
+        <oirExp xsi:nil="true" />
+        <chipsImp xsi:nil="true" />
+        <chipsExp xsi:nil="true" />
+        <charImp xsi:nil="true" />
+        <charExp>143195</charExp>
+        <resImp xsi:nil="true" />
+        <resExp xsi:nil="true" />
+        <documentation xsi:nil="true" />
+      </worksheet3D1DataYear>
+      <worksheet3D1DataYear>
+        <countryCode>BRM</countryCode>
+        <hwpYear>2016</hwpYear>
+        <rwProd xsi:nil="true" />
+        <rwImp xsi:nil="true" />
+        <rwExp xsi:nil="true" />
+        <swProd xsi:nil="true" />
+        <swImp xsi:nil="true" />
+        <swExp xsi:nil="true" />
+        <wbpProd xsi:nil="true" />
+        <wbpImp xsi:nil="true" />
+        <wbpExp xsi:nil="true" />
+        <ppProd xsi:nil="true" />
+        <ppImp xsi:nil="true" />
+        <ppExp xsi:nil="true" />
+        <wpImp xsi:nil="true" />
+        <wpExp xsi:nil="true" />
+        <irProd xsi:nil="true" />
+        <irImp xsi:nil="true" />
+        <irExp xsi:nil="true" />
+        <oirProd xsi:nil="true" />
+        <oirImp xsi:nil="true" />
+        <oirExp xsi:nil="true" />
+        <chipsImp xsi:nil="true" />
+        <chipsExp xsi:nil="true" />
+        <charImp xsi:nil="true" />
+        <charExp xsi:nil="true" />
+        <resImp xsi:nil="true" />
+        <resExp xsi:nil="true" />
+        <documentation xsi:nil="true" />
+      </worksheet3D1DataYear>
+      <worksheet3D1DataYear>
+        <countryCode>BRM</countryCode>
+        <hwpYear>2017</hwpYear>
+        <rwProd xsi:nil="true" />
+        <rwImp xsi:nil="true" />
+        <rwExp xsi:nil="true" />
+        <swProd xsi:nil="true" />
+        <swImp xsi:nil="true" />
+        <swExp xsi:nil="true" />
+        <wbpProd xsi:nil="true" />
+        <wbpImp xsi:nil="true" />
+        <wbpExp xsi:nil="true" />
+        <ppProd xsi:nil="true" />
+        <ppImp xsi:nil="true" />
+        <ppExp xsi:nil="true" />
+        <wpImp xsi:nil="true" />
+        <wpExp xsi:nil="true" />
+        <irProd xsi:nil="true" />
+        <irImp xsi:nil="true" />
+        <irExp xsi:nil="true" />
+        <oirProd xsi:nil="true" />
+        <oirImp xsi:nil="true" />
+        <oirExp xsi:nil="true" />
+        <chipsImp xsi:nil="true" />
+        <chipsExp xsi:nil="true" />
+        <charImp xsi:nil="true" />
+        <charExp xsi:nil="true" />
+        <resImp xsi:nil="true" />
+        <resExp xsi:nil="true" />
+        <documentation xsi:nil="true" />
+      </worksheet3D1DataYear>
+      <worksheet3D1DataYear>
+        <countryCode>BRM</countryCode>
+        <hwpYear>2018</hwpYear>
+        <rwProd xsi:nil="true" />
+        <rwImp xsi:nil="true" />
+        <rwExp xsi:nil="true" />
+        <swProd xsi:nil="true" />
+        <swImp xsi:nil="true" />
+        <swExp xsi:nil="true" />
+        <wbpProd xsi:nil="true" />
+        <wbpImp xsi:nil="true" />
+        <wbpExp xsi:nil="true" />
+        <ppProd xsi:nil="true" />
+        <ppImp xsi:nil="true" />
+        <ppExp xsi:nil="true" />
+        <wpImp xsi:nil="true" />
+        <wpExp xsi:nil="true" />
+        <irProd xsi:nil="true" />
+        <irImp xsi:nil="true" />
+        <irExp xsi:nil="true" />
+        <oirProd xsi:nil="true" />
+        <oirImp xsi:nil="true" />
+        <oirExp xsi:nil="true" />
+        <chipsImp xsi:nil="true" />
+        <chipsExp xsi:nil="true" />
+        <charImp xsi:nil="true" />
+        <charExp xsi:nil="true" />
+        <resImp xsi:nil="true" />
+        <resExp xsi:nil="true" />
+        <documentation xsi:nil="true" />
+      </worksheet3D1DataYear>
+    </worksheet3D1Data>
+  </record>
+  <skipIpccCodeList xmlns="" />
+  <signature xmlns="">sWCf1hbb2Z9V9mogtzJgFA==</signature>
+</IPCC2006Export>

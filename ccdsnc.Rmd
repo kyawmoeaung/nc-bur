@@ -5,26 +5,673 @@ output: github_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(readxl)
+library(dplyr)
+library(stringr)
+library(lubridate)
+library(ggplot2)
+library(compareDF)
+
 ```
 
-## GitHub Documents
+## Introduction
 
-This is an R Markdown format used for publishing markdown documents to GitHub. When you click the **Knit** button all R code chunks are run and a markdown file (.md) suitable for publishing to GitHub is generated.
+Myanmar Second National Communication Project has been being implemented since 2016 with the technical support of United Nations Environment Programmes in collaboration with Environmental Conservation Department and funded by Global Environment Facility. The primary output of the project is to officially communicate and publish national communication report in relation to climate change consisting of national circumstances, national greenhouse gases inventory, programmes and measure to facilitate an adequate adaption of climate change, programmes and measures that mitigate ghg emissions, other information such as research and systematic observation, environmentally sound technology and education, training and public awareness, constraint and gaps on the financial, technology and capacity building to successfully implement the objectives of the Convention.
 
-## Including Code
+Although all chapters included in the communication report are important, chapter on national greenhouse gas inventory estimate is key for better management of emissions and removal in a particular country. In general, National GHG Inventory comprises of five IPCC sector (because these sectors are classified by IPCC)and they are 1. Energy, 2. Industrial Processes and Product Use (IPPU), 3. Agriculture, Forestry and Other Land Use (AFOLU) and 4. Waste sectors. Due to the importance of accurate estimate of the National GHG inventory, IPCC has provided a minimum requirement of Quality Assurance and Quality Control (QA/QC) procedures. It contains 
 
-You can include R code in the document as follows:
+There are five GHG Inventory principles so called "TACCC" which means Transparency, Accuracy, Completeness, Comparability and Consistency which make sure the compiled GHG inventory is credible and verified for quality assurance.
+
+
+
+
+
+## Energy
+
+QA/QC check is performed by comparing two excel workbook extracted from the IPCC Inventory Database namely `ccdsnc.mdb` and `Energy_(20.9.2021).mdb`. The energy sectoral report - which can can be accessed from Menu -> Reports -> Energy -> sectoral - tables were extracted as excel sheets. 
+
+### Brief Overview
 
 ```{r cars}
-summary(cars)
+
+ccd2018 <- read_excel("~/nc-bur/Energy/Energy_Sectoral_CCD_1995.xls", range = "A3:H108", na = c("NO", "NE", "IE"), col_types = c("text", rep("numeric", 7 )))
+ene2018 <- read_excel("~/nc-bur/Energy/Energy_Sectoral_SLM_1995.xls", range = "A3:H108", na = c("NO", "NE", "IE"), col_types = c("text", rep("numeric", 7 )))
+print(paste("The cell by cell comparison of two data frames", "is found to be correct if there is 696 cells are identical. So the result of `ccd2018` and `ene2018` comparison is")) 
+table(ccd2018 == ene2018, useNA="ifany")
+
+#ccd2018[1:10,1:4] == ene2018[1:10, 1:4]
+```
+ There are 660 cells which are identical between two sectoral table (one is from sectoral leader's submitted table and the other is from the ccd's table) while 23 cells are inconsistent between them. `NA` values mean there is no data entry in both tables. However, it is to be noted that inconsistency can also be found when NA occurs in one table and "0" zero value mentioned in the other although they means the same. Although the output is very useful as an overview, it is necessary to know which specific cells are inconsistent. To achieve this purpose, a function call is constructed to show specific cell from two different tables. 
+ 
+## Writing function for the analysis
+
+Writing a function in R program is sending instruction to the computer to do analysis to find inconsistent cells by comparing their respective values from two different tables. `CompareDF` package do this job properly. In the function call, two excel workbook of same year from two different sources are imported and then compare between them to produce a table showing inconsistency between two tables. Every two rows starting from the top show where the index (row number) of the cell and what values are different. 
+
+
+```{r}
+#setwd(file.path(getwd(), "Energy"))
+qccheck <- function(file1, file2){
+  df1 <- readxl::read_excel(file1,
+                             range = "A3:H108",
+                              col_types = c("text", rep("numeric", 7)))
+  df2 <- readxl::read_excel(file2,
+                              range = "A3:H108",
+                              col_types = c("text", rep("numeric", 7)))
+  table(df1 == df2, useNA = "ifany")
+  compared <- compare_df(df1, df2)
+  knitr::kable(compared$comparison_df)
+}
 ```
 
-## Including Plots
+### Inventory QC check - 1995
 
-You can also embed plots, for example:
+As table shown below, there are 16 inconsistencies found between two tables at row numbers 1, 2, 3, 4, 5, 55, 56, 82, primarily in the CO2, CH4 and N2O emissions column. If we looked at carefully in the following table there are pairs of rows showing the differences in one or more columns especially at CO2, CH4 and N2O columns. The first pair is located at `1-Energy` category with , `r 6653.455 - 4425.893` Gg difference between 4425.893 Gg in one table and 6653.455 Gg in the other at CO2 column, `r 31.666 - 31.617` Gg difference between 31.167 Gg in one table and 31.166 Gg in the other at CH4 column while `r 0.149 - 0.144` Gg difference between 0.149 Gg and 0.144 Gg at N2O column. Checking other pairs of inconsistent categories includes 1.A - Fuel Combustion Activities, 1.A.1 - Energy Industries, 1.A.1.a - Main Activity Electricity and Heat Production, 1.A.1.a.i - Electricity Generation, 1.A.5 - Non-Specified, 1.A.5.a - Stationary
 
-```{r pressure, echo=FALSE}
-plot(pressure)
+```{r}
+qccheck("~/nc-bur/Energy/Energy_Sectoral_CCD_1995.xls", "~/nc-bur/Energy/Energy_Sectoral_SLM_1995.xls")
+```
+### QC check - 1996
+
+```{r}
+qccheck("~/nc-bur/Energy/Energy_Sectoral_CCD_1996.xls", "~/nc-bur/Energy/Energy_Sectoral_SLM_1996.xls")
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+GHG inventory QC - 1997
+
+```{r}
+qccheck("~/nc-bur/Energy/Energy_Sectoral_CCD_1997.xls", "~/nc-bur/Energy/Energy_Sectoral_SLM_1997.xls")
+```
+
+### GHG Inventory QC - 1998
+
+```{r}
+qccheck("~/nc-bur/Energy/Energy_Sectoral_CCD_1998.xls", "~/nc-bur/Energy/Energy_Sectoral_SLM_1998.xls")
+```
+
+### GHG Inventory QC - 1999
+
+```{r}
+qccheck("~/nc-bur/Energy/Energy_Sectoral_CCD_1999.xls", "~/nc-bur/Energy/Energy_Sectoral_SLM_1999.xls")
+```
+
+### GHG Inventory QC - 2000
+
+```{r}
+qccheck("~/nc-bur/Energy/Energy_Sectoral_CCD_2000.xls", "~/nc-bur/Energy/Energy_Sectoral_SLM_2000.xls")
+```
+
+### GHG Inventory QC - 2001
+
+```{r}
+qccheck("~/nc-bur/Energy/Energy_Sectoral_CCD_2001.xls", "~/nc-bur/Energy/Energy_Sectoral_SLM_2001.xls")
+```
+
+### GHG Inventory QC - 2002
+
+```{r}
+qccheck("~/nc-bur/Energy/Energy_Sectoral_CCD_2002.xls", "~/nc-bur/Energy/Energy_Sectoral_SLM_2002.xls")
+```
+
+### GHG Inventory QC - 2003
+
+```{r}
+qccheck("~/nc-bur/Energy/Energy_Sectoral_CCD_2003.xls", "~/nc-bur/Energy/Energy_Sectoral_SLM_2003.xls")
+```
+
+### GHG Inventory QC - 2004
+
+```{r}
+qccheck("~/nc-bur/Energy/Energy_Sectoral_CCD_2004.xls", "~/nc-bur/Energy/Energy_Sectoral_SLM_2004.xls")
+```
+
+### GHG Inventory QC - 2005
+
+```{r}
+qccheck("~/nc-bur/Energy/Energy_Sectoral_CCD_2005.xls", "~/nc-bur/Energy/Energy_Sectoral_SLM_2005.xls")
+```
+
+
+
+### GHG Inventory QC - 2006
+
+```{r}
+qccheck("~/nc-bur/Energy/Energy_Sectoral_CCD_2006.xls", "~/nc-bur/Energy/Energy_Sectoral_SLM_2006.xls")
+```
+
+### GHG Inventory QC - 2007
+
+```{r}
+qccheck("~/nc-bur/Energy/Energy_Sectoral_CCD_2007.xls", "~/nc-bur/Energy/Energy_Sectoral_SLM_2007.xls")
+```
+
+### GHG Inventory QC - 2008
+
+```{r}
+qccheck("~/nc-bur/Energy/Energy_Sectoral_CCD_2008.xls", "~/nc-bur/Energy/Energy_Sectoral_SLM_2008.xls")
+```
+
+
+### GHG Inventory QC - 2009
+
+```{r}
+qccheck("~/nc-bur/Energy/Energy_Sectoral_CCD_2009.xls", "~/nc-bur/Energy/Energy_Sectoral_SLM_2009.xls")
+```
+
+
+### GHG Inventory QC - 2010
+
+```{r}
+qccheck("~/nc-bur/Energy/Energy_Sectoral_CCD_2010.xls", "~/nc-bur/Energy/Energy_Sectoral_SLM_2010.xls")
+```
+
+
+### GHG Inventory QC - 2011
+
+```{r}
+qccheck("~/nc-bur/Energy/Energy_Sectoral_CCD_2011.xls", "~/nc-bur/Energy/Energy_Sectoral_SLM_2011.xls")
+```
+
+### GHG Inventory QC - 2012
+
+```{r}
+qccheck("~/nc-bur/Energy/Energy_Sectoral_CCD_2012.xls", "~/nc-bur/Energy/Energy_Sectoral_SLM_2012.xls")
+```
+
+
+### GHG Inventory QC - 2013
+
+```{r}
+qccheck("~/nc-bur/Energy/Energy_Sectoral_CCD_2013.xls", "~/nc-bur/Energy/Energy_Sectoral_SLM_2013.xls")
+```
+
+
+### GHG Inventory QC - 2014
+
+```{r}
+qccheck("~/nc-bur/Energy/Energy_Sectoral_CCD_2014.xls", "~/nc-bur/Energy/Energy_Sectoral_SLM_2014.xls")
+```
+
+
+
+### GHG Inventory QC - 2015
+
+```{r}
+qccheck("~/nc-bur/Energy/Energy_Sectoral_CCD_2015.xls", "~/nc-bur/Energy/Energy_Sectoral_SLM_2015.xls")
+```
+
+
+### GHG Inventory QC - 2016
+
+```{r}
+qccheck("~/nc-bur/Energy/Energy_Sectoral_CCD_2016.xls", "~/nc-bur/Energy/Energy_Sectoral_SLM_2016.xls")
+```
+
+
+### GHG Inventory QC - 2017
+
+```{r}
+qccheck("~/nc-bur/Energy/Energy_Sectoral_CCD_2017.xls", "~/nc-bur/Energy/Energy_Sectoral_SLM_2017.xls")
+```
+
+
+### GHG Inventory QC - 2018
+
+```{r}
+qccheck("~/nc-bur/Energy/Energy_Sectoral_CCD_2018.xls", "~/nc-bur/Energy/Energy_Sectoral_SLM_2018.xls")
+```
+
+## Livestock
+
+```{r}
+#setwd(file.path(getwd(), "Energy"))
+Lqccheck <- function(file1, file2){
+  df1 <- readxl::read_excel(file1,
+                             range = "A6:G31",
+                              col_types = c("text", rep("numeric", 6)),
+                            col_names = (c("Category", "Net CO2", "CH4", "N2O", "NOx", "CO", "NMVOC")))
+  knitr::kable(df1, caption = paste("Agriculture Sector QA Check", unlist(stringr::str_extract(file1, pattern = "\\d{4}"))))
+  df2 <- readxl::read_excel(file2,
+                              range = "A6:G31",
+                              col_types = c("text", rep("numeric", 6)),
+                            col_names = (c("Category", "Net CO2", "CH4", "N2O", "NOx", "CO", "NMVOC")))
+   knitr::kable(df1, caption = paste("Livestock Sector QA Check", unlist(stringr::str_extract(file1, pattern = "\\d{4}"))))
+  table(df1 == df2, useNA = "ifany")
+  compared <- compare_df(df1, df2)
+  # knitr::kable(compared$comparison_df, "pipe", caption = paste( "Agriculture QA/QC check for ", yr))
+   knitr::kable(compared$comparison_df, "pipe", caption = paste("Livestock Sector QA Check in", unlist(stringr::str_extract(file1, pattern = "\\d{4}"))))
+}
+```
+
+### Livestock sector - 2005
+
+```{r message = FALSE, error=FALSE}
+ Lqccheck("~/nc-bur/afolu/afolu_ccd_2005.xls", "~/nc-bur/afolu/agri_nmt_2005.xls")
+```
+
+### Livestock sector - 2006
+
+```{r}
+ Lqccheck("~/nc-bur/afolu/afolu_ccd_2006.xls", "~/nc-bur/afolu/agri_nmt_2006.xls")
+```
+
+### Livestock sector - 2007
+
+```{r}
+ Lqccheck("~/nc-bur/afolu/afolu_ccd_2007.xls", "~/nc-bur/afolu/agri_nmt_2007.xls")
+```
+
+
+
+### Livestock sector - 2008
+
+```{r}
+ Lqccheck("~/nc-bur/afolu/afolu_ccd_2008.xls", "~/nc-bur/afolu/agri_nmt_2008.xls")
+```
+
+
+### Livestock sector - 2009
+
+```{r}
+ Lqccheck("~/nc-bur/afolu/afolu_ccd_2009.xls", "~/nc-bur/afolu/agri_nmt_2009.xls")
+```
+
+### Livestock sector - 2010
+
+```{r}
+ Lqccheck("~/nc-bur/afolu/afolu_ccd_2010.xls", "~/nc-bur/afolu/agri_nmt_2010.xls")
+```
+
+### Livestock sector - 2011
+
+```{r}
+ Lqccheck("~/nc-bur/afolu/afolu_ccd_2011.xls", "~/nc-bur/afolu/agri_nmt_2011.xls")
+```
+
+### Livestock sector - 2012
+
+```{r}
+ Lqccheck("~/nc-bur/afolu/afolu_ccd_2012.xls", "~/nc-bur/afolu/agri_nmt_2012.xls")
+```
+
+### Livestock sector - 2013
+
+```{r}
+ Lqccheck("~/nc-bur/afolu/afolu_ccd_2013.xls", "~/nc-bur/afolu/agri_nmt_2013.xls")
+```
+
+### Livestock sector - 2014
+
+```{r}
+ Lqccheck("~/nc-bur/afolu/afolu_ccd_2014.xls", "~/nc-bur/afolu/agri_nmt_2014.xls")
+```
+
+### Livestock sector - 2015
+
+```{r}
+ Lqccheck("~/nc-bur/afolu/afolu_ccd_2015.xls", "~/nc-bur/afolu/agri_nmt_2015.xls")
+```
+
+
+## Agricultue
+
+```{r}
+
+Aqccheck <- function(file1, file2){
+  df1 <- readxl::read_excel(file1,
+                             range = "A81:G93",
+                              col_types = c("text", rep("numeric", 6)),
+                            col_names = (c("Category", "Net CO2", "CH4", "N2O", "NOx", "CO", "NMVOC")))
+  knitr::kable(df1, caption = paste("Agriculture Sector QA Check", unlist(stringr::str_extract(file1, pattern = "\\d{4}"))))
+  df2 <- readxl::read_excel(file2,
+                              range = "A81:G93",
+                              col_types = c("text", rep("numeric", 6)),
+                            col_names = (c("Category", "Net CO2", "CH4", "N2O", "NOx", "CO", "NMVOC")))
+   knitr::kable(df1, caption = paste("Agriculture Sector QA Check", unlist(stringr::str_extract(file1, pattern = "\\d{4}"))))
+  table(df1 == df2, useNA = "ifany")
+  compared <- compare_df(df1, df2)
+  # knitr::kable(compared$comparison_df, "pipe", caption = paste( "Agriculture QA/QC check for ", yr))
+   knitr::kable(compared$comparison_df, "pipe", caption = paste("Agriculture Sector QA Check in", unlist(stringr::str_extract(file1, pattern = "\\d{4}"))))
+}
+```
+
+### Agriculture Sector QC Check - 2005
+
+```{r}
+ Aqccheck("~/nc-bur/afolu/afolu_ccd_2005.xls", "~/nc-bur/afolu/agri_nmt_2005.xls")
+```
+### Agriculture Sector QC Check - 2006
+
+```{r}
+ Aqccheck("~/nc-bur/afolu/afolu_ccd_2006.xls", "~/nc-bur/afolu/agri_nmt_2006.xls")
+```
+### Agriculture Sector QC Check - 2007
+
+```{r}
+ Aqccheck("~/nc-bur/afolu/afolu_ccd_2007.xls", "~/nc-bur/afolu/agri_nmt_2007.xls")
+```
+
+### Agriculture Sector QC Check - 2008
+
+```{r}
+ Aqccheck("~/nc-bur/afolu/afolu_ccd_2008.xls", "~/nc-bur/afolu/agri_nmt_2008.xls")
+```
+
+
+### Agriculture Sector QC Check - 2009
+
+```{r}
+ Aqccheck("~/nc-bur/afolu/afolu_ccd_2009.xls", "~/nc-bur/afolu/agri_nmt_2009.xls")
+```
+
+### Agriculture Sector QC Check - 2010
+
+```{r}
+ Aqccheck("~/nc-bur/afolu/afolu_ccd_2010.xls", "~/nc-bur/afolu/agri_nmt_2010.xls")
+```
+
+
+### Agriculture Sector QC Check - 2011
+
+```{r}
+ Aqccheck("~/nc-bur/afolu/afolu_ccd_2011.xls", "~/nc-bur/afolu/agri_nmt_2011.xls")
+```
+
+### Agriculture Sector QC Check - 2012
+
+```{r}
+ Aqccheck("~/nc-bur/afolu/afolu_ccd_2012.xls", "~/nc-bur/afolu/agri_nmt_2012.xls")
+```
+
+### Agriculture Sector QC Check - 2013
+
+```{r}
+ Aqccheck("~/nc-bur/afolu/afolu_ccd_2013.xls", "~/nc-bur/afolu/agri_nmt_2013.xls")
+```
+
+
+### Agriculture Sector QC Check - 2014
+
+```{r}
+ Aqccheck("~/nc-bur/afolu/afolu_ccd_2014.xls", "~/nc-bur/afolu/agri_nmt_2014.xls")
+```
+
+### Agriculture Sector QC Check - 2015
+
+```{r}
+ Aqccheck("~/nc-bur/afolu/afolu_ccd_2015.xls", "~/nc-bur/afolu/agri_nmt_2015.xls")
+```
+
+## Land Sector
+
+```{r}
+Landqccheck <- function(file1, file2){
+  df1 <- readxl::read_excel(file1,
+                             range = "A5:G96",
+                              col_types = c("text", rep("numeric", 6)),
+                            col_names = (c("Category", "Net CO2", "CH4", "N2O", "NOx", "CO", "NMVOC")))
+  knitr::kable(df1, caption = paste("Agriculture Sector QA Check", unlist(stringr::str_extract(file1, pattern = "\\d{4}"))))
+  df2 <- readxl::read_excel(file2,
+                              range = "A5:G96",
+                              col_types = c("text", rep("numeric", 6)),
+                            col_names = (c("Category", "Net CO2", "CH4", "N2O", "NOx", "CO", "NMVOC")))
+   knitr::kable(df1, caption = paste("Land Sector QA Check", unlist(stringr::str_extract(file1, pattern = "\\d{4}"))))
+  table(df1 == df2, useNA = "ifany")
+  compared <- compare_df(df1, df2)
+  # knitr::kable(compared$comparison_df, "pipe", caption = paste( "Agriculture QA/QC check for ", yr))
+   knitr::kable(compared$comparison_df, "pipe", caption = paste("**Land Sector** QA Check in", unlist(stringr::str_extract(file1, pattern = "\\d{4}"))))
+}
+
+
+```
+
+
+### Land Sector QC Check - 2005
+
+```{r}
+ Landqccheck("~/nc-bur/afolu/afolu_ccd_2005.xls", "~/nc-bur/afolu/folu_ukma_2005.xls")
+```
+
+### Land Sector QC Check - 2006
+
+```{r}
+ Landqccheck("~/nc-bur/afolu/afolu_ccd_2006.xls", "~/nc-bur/afolu/folu_ukma_2006.xls")
+```
+
+### Land Sector QC Check - 2007
+
+```{r}
+ Landqccheck("~/nc-bur/afolu/afolu_ccd_2007.xls", "~/nc-bur/afolu/folu_ukma_2007.xls")
+```
+
+### Land Sector QC Check - 2008
+
+```{r}
+ Landqccheck("~/nc-bur/afolu/afolu_ccd_2008.xls", "~/nc-bur/afolu/folu_ukma_2008.xls")
+```
+
+### Land Sector QC Check - 2009
+
+```{r}
+ Landqccheck("~/nc-bur/afolu/afolu_ccd_2009.xls", "~/nc-bur/afolu/folu_ukma_2009.xls")
+```
+
+### Land Sector QC Check - 2010
+
+```{r}
+ Landqccheck("~/nc-bur/afolu/afolu_ccd_2010.xls", "~/nc-bur/afolu/folu_ukma_2010.xls")
+```
+
+### Land Sector QC Check - 2011
+```{r}
+ Landqccheck("~/nc-bur/afolu/afolu_ccd_2011.xls", "~/nc-bur/afolu/folu_ukma_2011.xls")
+```
+
+### Land Sector QC Check - 2012
+
+```{r}
+ Landqccheck("~/nc-bur/afolu/afolu_ccd_2012.xls", "~/nc-bur/afolu/folu_ukma_2012.xls")
+```
+
+### Land Sector QC Check - 2013
+
+```{r}
+ Landqccheck("~/nc-bur/afolu/afolu_ccd_2013.xls", "~/nc-bur/afolu/folu_ukma_2013.xls")
+```
+
+### Land Sector QC Check - 2014
+
+```{r}
+ Landqccheck("~/nc-bur/afolu/afolu_ccd_2014.xls", "~/nc-bur/afolu/folu_ukma_2014.xls")
+```
+
+### Land Sector QC Check - 2015
+
+```{r}
+ Landqccheck("~/nc-bur/afolu/afolu_ccd_2015.xls", "~/nc-bur/afolu/folu_ukma_2015.xls")
+```
+
+
+## Waste Sector
+
+```{r}
+Wasteqccheck <- function(file1, file2){
+  df1 <- readxl::read_excel(file1,
+                             range = "A5:G96",
+                              col_types = c("text", rep("numeric", 6)),
+                            col_names = (c("Category", "Net CO2", "CH4", "N2O", "NOx", "CO", "NMVOC")))
+  knitr::kable(df1, caption = paste("Waste Sector QA Check", unlist(stringr::str_extract(file1, pattern = "\\d{4}"))))
+  df2 <- readxl::read_excel(file2,
+                              range = "A5:G96",
+                              col_types = c("text", rep("numeric", 6)),
+                            col_names = (c("Category", "Net CO2", "CH4", "N2O", "NOx", "CO", "NMVOC")))
+   knitr::kable(df1, caption = paste("Waste Sector QA Check", unlist(stringr::str_extract(file1, pattern = "\\d{4}"))))
+  table(df1 == df2, useNA = "ifany")
+  compared <- compare_df(df1, df2)
+  
+   knitr::kable(compared$comparison_df, "pipe", caption = paste("**Waste Sector** QA Check in", unlist(stringr::str_extract(file1, pattern = "\\d{4}"))))
+}
+
+
+```
+
+### Waste Sector QC Check - 1995
+
+```{r}
+ Wasteqccheck("~/nc-bur/W/waste_ccd_1995.xls", "~/nc-bur/W/waste_mth_1995.xls")
+```
+
+### Waste Sector QC Check - 1996
+
+```{r}
+ Wasteqccheck("~/nc-bur/W/waste_ccd_1996.xls", "~/nc-bur/W/waste_mth_1996.xls")
+```
+### Waste Sector QC Check - 1997
+
+```{r}
+ Wasteqccheck("~/nc-bur/W/waste_ccd_1997.xls", "~/nc-bur/W/waste_mth_1997.xls")
+```
+
+### Waste Sector QC Check - 1998
+
+```{r}
+ Wasteqccheck("~/nc-bur/W/waste_ccd_1998.xls", "~/nc-bur/W/waste_mth_1998.xls")
+```
+
+### Waste Sector QC Check - 1999
+
+```{r}
+ Wasteqccheck("~/nc-bur/W/waste_ccd_1999.xls", "~/nc-bur/W/waste_mth_1999.xls")
+```
+
+### Waste Sector QC Check - 2000
+
+```{r}
+ Wasteqccheck("~/nc-bur/W/waste_ccd_2000.xls", "~/nc-bur/W/waste_mth_2000.xls")
+```
+
+### Waste Sector QC Check - 2001
+
+```{r}
+ Wasteqccheck("~/nc-bur/W/waste_ccd_2001.xls", "~/nc-bur/W/waste_mth_2001.xls")
+```
+
+### Waste Sector QC Check - 2002
+
+```{r}
+ Wasteqccheck("~/nc-bur/W/waste_ccd_2002.xls", "~/nc-bur/W/waste_mth_2002.xls")
+```
+
+
+### Waste Sector QC Check - 2003
+
+```{r}
+ Wasteqccheck("~/nc-bur/W/waste_ccd_2003.xls", "~/nc-bur/W/waste_mth_2003.xls")
+```
+
+### Waste Sector QC Check - 2004
+
+```{r}
+ Wasteqccheck("~/nc-bur/W/waste_ccd_2004.xls", "~/nc-bur/W/waste_mth_2004.xls")
+```
+
+### Waste Sector QC Check - 2005
+
+```{r}
+ Wasteqccheck("~/nc-bur/W/waste_ccd_2005.xls", "~/nc-bur/W/waste_mth_2005.xls")
+```
+
+### Waste Sector QC Check - 2006
+
+```{r}
+ Wasteqccheck("~/nc-bur/W/waste_ccd_2006.xls", "~/nc-bur/W/waste_mth_2006.xls")
+```
+
+### Waste Sector QC Check - 2007
+
+```{r}
+ Wasteqccheck("~/nc-bur/W/waste_ccd_2007.xls", "~/nc-bur/W/waste_mth_2007.xls")
+```
+
+### Waste Sector QC Check - 2008
+
+```{r}
+ Wasteqccheck("~/nc-bur/W/waste_ccd_2008.xls", "~/nc-bur/W/waste_mth_2008.xls")
+```
+
+### Waste Sector QC Check - 2009
+
+```{r}
+ Wasteqccheck("~/nc-bur/W/waste_ccd_2009.xls", "~/nc-bur/W/waste_mth_2009.xls")
+```
+
+### Waste Sector QC Check - 2010
+
+```{r}
+ Wasteqccheck("~/nc-bur/W/waste_ccd_2010.xls", "~/nc-bur/W/waste_mth_2010.xls")
+```
+
+### Waste Sector QC Check - 2011
+
+```{r}
+ Wasteqccheck("~/nc-bur/W/waste_ccd_2011.xls", "~/nc-bur/W/waste_mth_2011.xls")
+```
+
+### Waste Sector QC Check - 2012
+
+```{r}
+ Wasteqccheck("~/nc-bur/W/waste_ccd_2012.xls", "~/nc-bur/W/waste_mth_2012.xls")
+```
+
+### Waste Sector QC Check - 2013
+
+```{r}
+ Wasteqccheck("~/nc-bur/W/waste_ccd_2013.xls", "~/nc-bur/W/waste_mth_2013.xls")
+```
+
+### Waste Sector QC Check - 2014
+
+```{r}
+ Wasteqccheck("~/nc-bur/W/waste_ccd_2014.xls", "~/nc-bur/W/waste_mth_2014.xls")
+```
+
+### Waste Sector QC Check - 2015
+
+```{r}
+ Wasteqccheck("~/nc-bur/W/waste_ccd_2015.xls", "~/nc-bur/W/waste_mth_2015.xls")
+```
+
+### Waste Sector QC Check - 2016
+
+```{r}
+ Wasteqccheck("~/nc-bur/W/waste_ccd_2016.xls", "~/nc-bur/W/waste_mth_2016.xls")
+```
+
+### Waste Sector QC Check - 2017
+
+```{r}
+ Wasteqccheck("~/nc-bur/W/waste_ccd_2017.xls", "~/nc-bur/W/waste_mth_2017.xls")
+```
+
+### Waste Sector QC Check - 2018
+
+```{r}
+ Wasteqccheck("~/nc-bur/W/waste_ccd_2018.xls", "~/nc-bur/W/waste_mth_2018.xls")
+```
+
+```{r}
+path <- file.path(getwd(), "Energy")
+
+qccheck("~/nc-bur/Energy/Energy_Sectoral_CCD_1995.xls","~/nc-bur/Energy/Energy_Sectoral_SLM_1995.xls" )
+for (f in file[1:24]){
+  for (g in file[25:48])
+    
+    qccheck(paste0(path,"/", f), paste0(path, "/", g))
+}
+
+qccheck(paste0(path,"/", file[3]), paste0(pathfile[27]))
+
+qccheck(file.choose(), file.choose()), "/", 
+
+whic()
+```
+
